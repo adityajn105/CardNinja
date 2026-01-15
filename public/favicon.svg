@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" rx="20" fill="#0a0a0a"/>
+  <!-- Ninja face -->
+  <ellipse cx="50" cy="50" rx="30" ry="28" fill="#1a1a2e"/>
+  <!-- Headband -->
+  <rect x="20" y="38" width="60" height="12" fill="#f59e0b"/>
+  <!-- Eyes -->
+  <ellipse cx="38" cy="44" rx="6" ry="4" fill="#fff"/>
+  <ellipse cx="62" cy="44" rx="6" ry="4" fill="#fff"/>
+  <circle cx="38" cy="44" r="2" fill="#0a0a0a"/>
+  <circle cx="62" cy="44" r="2" fill="#0a0a0a"/>
+  <!-- Mask -->
+  <path d="M30 52 Q50 70 70 52 L70 65 Q50 78 30 65 Z" fill="#1a1a2e"/>
+</svg>

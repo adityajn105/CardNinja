@@ -1,0 +1,372 @@
+{
+  "cards": [
+    {
+      "id": "chase-freedom-flex",
+      "name": "Freedom Flex",
+      "issuer": "Chase",
+      "color": "#1a365d",
+      "url": "https://creditcards.chase.com/cash-back-credit-cards/freedom/flex",
+      "image": "/card-images/chase-freedom-flex.png"
+    },
+    {
+      "id": "chase-freedom-unlimited",
+      "name": "Freedom Unlimited",
+      "issuer": "Chase",
+      "color": "#0066b2",
+      "url": "https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited",
+      "image": "/card-images/chase-freedom-unlimited.png"
+    },
+    {
+      "id": "chase-sapphire-preferred",
+      "name": "Sapphire Preferred",
+      "issuer": "Chase",
+      "color": "#1a365d",
+      "url": "https://creditcards.chase.com/rewards-credit-cards/sapphire/preferred",
+      "image": "/card-images/chase-sapphire-preferred.png"
+    },
+    {
+      "id": "chase-sapphire-reserve",
+      "name": "Sapphire Reserve",
+      "issuer": "Chase",
+      "color": "#0d2137",
+      "url": "https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve",
+      "image": "/card-images/chase-sapphire-reserve.png"
+    },
+    {
+      "id": "chase-amazon-prime",
+      "name": "Amazon Prime Visa",
+      "issuer": "Chase",
+      "color": "#232f3e",
+      "url": "https://creditcards.chase.com/cash-back-credit-cards/amazon-prime-rewards",
+      "image": "/card-images/amazon-prime-visa.png"
+    },
+    {
+      "id": "chase-marriott-boundless",
+      "name": "Marriott Bonvoy Boundless",
+      "issuer": "Chase",
+      "color": "#8b0000",
+      "url": "https://creditcards.chase.com/travel-credit-cards/marriott-bonvoy/boundless",
+      "image": "/card-images/marriot-bonvoy-boundless.png"
+    },
+    {
+      "id": "chase-hyatt",
+      "name": "World of Hyatt",
+      "issuer": "Chase",
+      "color": "#6b4c9a",
+      "url": "https://creditcards.chase.com/travel-credit-cards/world-of-hyatt-credit-card",
+      "image": "/card-images/chase-world-of-hyatt.png"
+    },
+    {
+      "id": "chase-united-explorer",
+      "name": "United Explorer",
+      "issuer": "Chase",
+      "color": "#00467f",
+      "url": "https://www2.theexplorercard.com/rewards-cards/explorer-card",
+      "image": "/card-images/chase-united-explorer.png"
+    },
+    {
+      "id": "chase-southwest-plus",
+      "name": "Southwest Rapid Rewards Plus",
+      "issuer": "Chase",
+      "color": "#e31837",
+      "url": "https://creditcards.chase.com/a1/southwest/AEM50kPlus1225",
+      "image": "/card-images/chase-southwest-plus.png"
+    },
+    {
+      "id": "chase-ihg-premier",
+      "name": "IHG One Rewards Premier",
+      "issuer": "Chase",
+      "color": "#1b4d3e",
+      "url": "https://creditcards.chase.com/travel-credit-cards/ihg-rewards-club/premier",
+      "image": "/card-images/chase-ihg-premier.png"
+    },
+    {
+      "id": "amex-platinum",
+      "name": "The Platinum Card",
+      "issuer": "American Express",
+      "color": "#a8a9ad",
+      "url": "https://www.americanexpress.com/us/credit-cards/card/platinum/",
+      "image": "/card-images/amex-platinum.png"
+    },
+    {
+      "id": "amex-gold",
+      "name": "Gold Card",
+      "issuer": "American Express",
+      "color": "#c9a227",
+      "url": "https://www.americanexpress.com/us/credit-cards/card/gold-card/",
+      "image": "/card-images/amex-gold.png"
+    },
+    {
+      "id": "amex-blue-cash-everyday",
+      "name": "Blue Cash Everyday",
+      "issuer": "American Express",
+      "color": "#006fcf",
+      "url": "https://www.americanexpress.com/us/credit-cards/card/blue-cash-everyday/",
+      "image": "/card-images/amex-blue-cash-everyday.png"
+    },
+    {
+      "id": "amex-blue-cash-preferred",
+      "name": "Blue Cash Preferred",
+      "issuer": "American Express",
+      "color": "#006fcf",
+      "url": "https://www.americanexpress.com/us/credit-cards/card/blue-cash-preferred/",
+      "image": "/card-images/amex-blue-cash-preferred.png"
+    },
+    {
+      "id": "amex-everyday",
+      "name": "Amex EveryDay",
+      "issuer": "American Express",
+      "color": "#002663",
+      "url": "https://www.americanexpress.com/us/credit-cards/card/amex-everyday/",
+      "image": "/card-images/amex-everyday.png"
+    },
+    {
+      "id": "amex-delta-gold",
+      "name": "Delta SkyMiles Gold",
+      "issuer": "American Express",
+      "color": "#003366",
+      "url": "https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-gold-american-express-card/",
+      "image": "/card-images/amex-delta-gold.png"
+    },
+    {
+      "id": "amex-hilton-aspire",
+      "name": "Hilton Honors Aspire",
+      "issuer": "American Express",
+      "color": "#104c97",
+      "url": "https://www.americanexpress.com/us/credit-cards/card/hilton-honors-aspire/",
+      "image": "/card-images/amex-hilton-aspire.png"
+    },
+    {
+      "id": "amex-marriott-brilliant",
+      "name": "Marriott Bonvoy Brilliant",
+      "issuer": "American Express",
+      "color": "#8b0000",
+      "url": "https://www.americanexpress.com/us/credit-cards/card/marriott-bonvoy-brilliant/",
+      "image": "/card-images/amex-marriott-brilliant.png"
+    },
+    {
+      "id": "capital-one-venture-x",
+      "name": "Venture X Rewards",
+      "issuer": "Capital One",
+      "color": "#1a1a1a",
+      "url": "https://www.capitalone.com/credit-cards/venture-x/",
+      "image": "/card-images/capital-one-venture-x.png"
+    },
+    {
+      "id": "capital-one-venture",
+      "name": "Venture Rewards",
+      "issuer": "Capital One",
+      "color": "#d03027",
+      "url": "https://www.capitalone.com/credit-cards/venture/",
+      "image": "/card-images/capital-one-venture.png"
+    },
+    {
+      "id": "capital-one-quicksilver",
+      "name": "Quicksilver Cash Rewards",
+      "issuer": "Capital One",
+      "color": "#a8a9ad",
+      "url": "https://www.capitalone.com/credit-cards/quicksilver/",
+      "image": "/card-images/capital-one-quicksilver.png"
+    },
+    {
+      "id": "capital-one-savor",
+      "name": "Savor Cash Rewards",
+      "issuer": "Capital One",
+      "color": "#d03027",
+      "url": "https://www.capitalone.com/credit-cards/savor/",
+      "image": "/card-images/capital-one-savor.png"
+    },
+    {
+      "id": "capital-one-savorone",
+      "name": "SavorOne Rewards",
+      "issuer": "Capital One",
+      "color": "#2c2c2c",
+      "url": "https://www.capitalone.com/credit-cards/savorone/",
+      "image": "/card-images/capital-one-savorone.png"
+    },
+    {
+      "id": "citi-double-cash",
+      "name": "Double Cash",
+      "issuer": "Citi",
+      "color": "#003b70",
+      "url": "https://www.citi.com/credit-cards/citi-double-cash-credit-card",
+      "image": "/card-images/citi-double-cash.png"
+    },
+    {
+      "id": "citi-custom-cash",
+      "name": "Custom Cash",
+      "issuer": "Citi",
+      "color": "#00558c",
+      "url": "https://www.citi.com/credit-cards/citi-custom-cash-credit-card",
+      "image": "/card-images/citi-custom-cash.png"
+    },
+    {
+      "id": "citi-costco",
+      "name": "Costco Anywhere Visa",
+      "issuer": "Citi",
+      "color": "#e31837",
+      "url": "https://www.citi.com/credit-cards/costco-anywhere-visa-credit-card",
+      "image": "/card-images/citi-costco.png"
+    },
+    {
+      "id": "citi-strata-premier",
+      "name": "Strata Premier",
+      "issuer": "Citi",
+      "color": "#1a1a1a",
+      "url": "https://www.citi.com/credit-cards/citi-strata-premier-credit-card",
+      "image": "/card-images/citi-strata-premier.webp"
+    },
+    {
+      "id": "wells-fargo-active-cash",
+      "name": "Active Cash",
+      "issuer": "Wells Fargo",
+      "color": "#cd1409",
+      "url": "https://creditcards.wellsfargo.com/active-cash-credit-card/",
+      "image": "/card-images/wells-fargo-active-cash.webp"
+    },
+    {
+      "id": "wells-fargo-autograph",
+      "name": "Autograph",
+      "issuer": "Wells Fargo",
+      "color": "#cd1409",
+      "url": "https://creditcards.wellsfargo.com/autograph-journey-visa-credit-card",
+      "image": "/card-images/wells-fargo-autograph.png"
+    },
+    {
+      "id": "wells-fargo-autograph-journey",
+      "name": "Autograph Journey",
+      "issuer": "Wells Fargo",
+      "color": "#1a1a1a",
+      "url": "https://creditcards.wellsfargo.com/autograph-journey-credit-card/",
+      "image": "/card-images/wells-fargo-autograph-journey.png"
+    },
+    {
+      "id": "wells-fargo-attune",
+      "name": "Attune",
+      "issuer": "Wells Fargo",
+      "color": "#2d5a27",
+      "url": "https://creditcards.wellsfargo.com/attune-credit-card/",
+      "image": "/card-images/wells-fargo-attune.png"
+    },
+    {
+      "id": "wells-fargo-reflect",
+      "name": "Reflect",
+      "issuer": "Wells Fargo",
+      "color": "#cd1409",
+      "url": "https://creditcards.wellsfargo.com/reflect-visa-credit-card/",
+      "image": "/card-images/wells-fargo-reflect.png"
+    },
+    {
+      "id": "bofa-customized-cash",
+      "name": "Customized Cash Rewards",
+      "issuer": "Bank of America",
+      "color": "#012169",
+      "url": "https://www.bankofamerica.com/credit-cards/products/cash-back-credit-card/",
+      "image": "/card-images/bofa-customized-cash.png"
+    },
+    {
+      "id": "bofa-unlimited-cash",
+      "name": "Unlimited Cash Rewards",
+      "issuer": "Bank of America",
+      "color": "#012169",
+      "url": "https://www.bankofamerica.com/credit-cards/products/unlimited-cash-back-credit-card/",
+      "image": "/card-images/bofa-unlimited-cash.png"
+    },
+    {
+      "id": "bofa-travel-rewards",
+      "name": "Travel Rewards",
+      "issuer": "Bank of America",
+      "color": "#012169",
+      "url": "https://www.bankofamerica.com/credit-cards/products/travel-rewards-credit-card/",
+      "image": "/card-images/bofa-travel-rewards.png"
+    },
+    {
+      "id": "bofa-premium-rewards",
+      "name": "Premium Rewards",
+      "issuer": "Bank of America",
+      "color": "#a8a9ad",
+      "url": "https://www.bankofamerica.com/credit-cards/products/premium-rewards-credit-card/",
+      "image": "/card-images/bofa-premium-rewards.png"
+    },
+    {
+      "id": "usbank-cash-plus",
+      "name": "Cash+ Visa Signature",
+      "issuer": "U.S. Bank",
+      "color": "#002855",
+      "url": "https://www.usbank.com/credit-cards/cash-plus-visa-signature-credit-card.html",
+      "image": "/card-images/usbank-cash-plus.png"
+    },
+    {
+      "id": "usbank-altitude-go",
+      "name": "Altitude Go Visa",
+      "issuer": "U.S. Bank",
+      "color": "#002855",
+      "url": "https://www.usbank.com/credit-cards/altitude-go-visa-signature-credit-card.html",
+      "image": "/card-images/usbank-altitude-go.png"
+    },
+    {
+      "id": "usbank-altitude-connect",
+      "name": "Altitude Connect",
+      "issuer": "U.S. Bank",
+      "color": "#1a1a1a",
+      "url": "https://www.usbank.com/credit-cards/altitude-connect-visa-signature-credit-card.html",
+      "image": "/card-images/usbank-altitude-connect.png"
+    },
+    {
+      "id": "usbank-shopper-cash",
+      "name": "Shopper Cash Rewards",
+      "issuer": "U.S. Bank",
+      "color": "#6b4c9a",
+      "url": "https://www.usbank.com/credit-cards/shopper-cash-rewards-visa-signature-credit-card.html",
+      "image": "/card-images/usbank-shopper-cash.png"
+    },
+    {
+      "id": "apple-card",
+      "name": "Apple Card",
+      "issuer": "Apple",
+      "color": "#f5f5f7",
+      "url": "https://www.apple.com/apple-card/",
+      "image": "/card-images/apple-card.png"
+    },
+    {
+      "id": "discover-it",
+      "name": "Discover it Cash Back",
+      "issuer": "Discover",
+      "color": "#ff6600",
+      "url": "https://www.discover.com/credit-cards/cash-back/it-card.html",
+      "image": "/card-images/discover-it.png"
+    },
+    {
+      "id": "bilt-mastercard",
+      "name": "Bilt World Elite Mastercard",
+      "issuer": "Bilt",
+      "color": "#1a1a1a",
+      "url": "https://www.biltrewards.com/card",
+      "image": "/card-images/bilt-mastercard.png"
+    },
+    {
+      "id": "paypal-cashback",
+      "name": "PayPal Cashback Mastercard",
+      "issuer": "PayPal",
+      "color": "#003087",
+      "url": "https://www.paypal.com/us/digital-wallet/manage-money/paypal-cashback-mastercard",
+      "image": "/card-images/paypal-cashback.png"
+    },
+    {
+      "id": "robinhood-gold",
+      "name": "Robinhood Gold Card",
+      "issuer": "Robinhood",
+      "color": "#00c805",
+      "url": "https://robinhood.com/creditcard/",
+      "image": "/card-images/robinhood-gold.png"
+    },
+    {
+      "id": "citi-my-best-buy-credit-card",
+      "name": "My Best Buy Credit Card",
+      "issuer": "Citi",
+      "color": "#749bd2",
+      "url": "https://www.bestbuy.com/site/misc/financing-rewards/pcmcat102500050032.c",
+      "image": "/card-images/citi-my-best-buy-credit-card.png"
+    }
+  ]
+}

@@ -1,0 +1,520 @@
+.explore-page {
+  min-height: 100vh;
+  position: relative;
+}
+
+.explore-header {
+  padding: 1.5rem 2rem 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  transition: color 0.2s;
+}
+
+.back-link:hover {
+  color: #00d4ff;
+}
+
+.back-link span {
+  font-size: 1.2rem;
+}
+
+.header-content {
+  text-align: center;
+}
+
+.explore-header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.explore-header .logo-icon {
+  font-size: 2rem;
+}
+
+.explore-header h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #00d4ff, #7c3aed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0;
+}
+
+.explore-header h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 1rem 0 0.5rem;
+}
+
+.explore-header .subtitle {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+}
+
+.explore-main {
+  padding: 0 2rem 4rem;
+  position: relative;
+  z-index: 1;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(255, 255, 255, 0.1);
+  border-top-color: #00d4ff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Issuer Sections */
+.issuer-section {
+  margin-bottom: 3rem;
+}
+
+.issuer-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.issuer-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.card-count {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+}
+
+/* Cards Grid */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Individual Card */
+.explore-card {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.explore-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(0, 212, 255, 0.3);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+}
+
+.card-header {
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-image {
+  width: 85%;
+  height: 85%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.card-placeholder {
+  width: 80px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+}
+
+.card-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 1rem;
+  line-height: 1.3;
+}
+
+.card-fee {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.fee-label {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.fee-value {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #00d4ff;
+}
+
+.card-rewards {
+  margin-bottom: 1rem;
+}
+
+.rewards-label {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.rewards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.reward-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.reward-rate {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #10b981;
+  min-width: 35px;
+}
+
+.reward-cat {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.card-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  text-align: center;
+  padding: 0.75rem 1rem;
+  margin-top: auto;
+  background: rgba(0, 212, 255, 0.15);
+  border: 1px solid rgba(0, 212, 255, 0.3);
+  color: #00d4ff;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  font-family: inherit;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.card-link:hover {
+  background: rgba(0, 212, 255, 0.25);
+  border-color: rgba(0, 212, 255, 0.5);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 212, 255, 0.2);
+}
+
+.card-link:active {
+  transform: translateY(0);
+}
+
+/* Toast Notification */
+.toast {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(245, 158, 11, 0.95);
+  color: #000;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  z-index: 1000;
+  animation: slideDown 0.3s ease-out;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.toast-icon {
+  font-size: 1.1rem;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+/* Compare Bar */
+.compare-sidebar {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+
+.compare-toggle-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  background: rgba(0, 212, 255, 0.5);
+  border: 2px solid rgba(0, 212, 255, 0.6);
+  border-radius: 50px;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(0, 212, 255, 0.3);
+}
+
+.compare-toggle-btn:hover {
+  background: rgba(0, 212, 255, 0.7);
+  border-color: rgba(0, 212, 255, 0.9);
+  transform: scale(1.05);
+  box-shadow: 0 6px 24px rgba(0, 212, 255, 0.5);
+}
+
+.compare-icon {
+  font-size: 1.2rem;
+}
+
+.compare-text {
+  letter-spacing: 0.02em;
+}
+
+/* Compare Actions Panel */
+.compare-actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: rgba(15, 15, 25, 0.95);
+  border: 2px solid rgba(0, 212, 255, 0.4);
+  border-radius: 50px;
+}
+
+.compare-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.deselect-btn {
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.deselect-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.compare-now-btn {
+  background: rgba(0, 212, 255, 0.8);
+  color: #fff;
+}
+
+.compare-now-btn:hover {
+  background: rgba(0, 212, 255, 1);
+  box-shadow: 0 4px 12px rgba(0, 212, 255, 0.4);
+}
+
+.cancel-btn {
+  background: rgba(239, 68, 68, 0.2);
+  color: #f87171;
+}
+
+.cancel-btn:hover {
+  background: rgba(239, 68, 68, 0.3);
+}
+
+/* Card Compare Mode */
+.explore-card.compare-mode {
+  cursor: pointer;
+  position: relative;
+}
+
+.explore-card.compare-mode:hover {
+  border-color: rgba(124, 58, 237, 0.5);
+}
+
+.explore-card.selected {
+  border-color: rgba(124, 58, 237, 0.8);
+  box-shadow: 0 0 0 2px rgba(124, 58, 237, 0.3), 0 12px 40px rgba(124, 58, 237, 0.2);
+}
+
+/* Card Checkbox */
+.card-checkbox {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 10;
+  width: 24px;
+  height: 24px;
+}
+
+.card-checkbox input {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.card-checkbox .checkmark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background: rgba(0, 0, 0, 0.6);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+  color: transparent;
+  font-size: 14px;
+  font-weight: 700;
+  transition: all 0.2s ease;
+}
+
+.card-checkbox input:checked + .checkmark {
+  background: #7c3aed;
+  border-color: #7c3aed;
+  color: #fff;
+}
+
+.explore-card.compare-mode:hover .checkmark {
+  border-color: rgba(124, 58, 237, 0.6);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .explore-header {
+    padding: 1rem 1rem 1.5rem;
+  }
+  
+  .explore-header h2 {
+    font-size: 1.5rem;
+  }
+  
+  .explore-main {
+    padding: 0 1rem 3rem;
+  }
+  
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .issuer-title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .compare-sidebar {
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .compare-toggle-btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+  }
+  
+  .compare-actions {
+    flex-direction: row;
+    gap: 0.4rem;
+  }
+  
+  .compare-btn {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.75rem;
+  }
+}

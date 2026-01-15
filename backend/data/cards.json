@@ -1,0 +1,4169 @@
+{
+  "last_updated": "2026-01-14T22:30:25.667346",
+  "cards": [
+    {
+      "id": "chase-freedom-flex",
+      "name": "Freedom Flex",
+      "issuer": "Chase",
+      "color": "#1a365d",
+      "annual_fee": 0,
+      "categories": {
+        "dining": 3,
+        "groceries": 1,
+        "travel": 5,
+        "gas": 1,
+        "streaming": 1,
+        "online_shopping": 1,
+        "transit": 1,
+        "entertainment": 1,
+        "drugstore": 3,
+        "other": 1
+      },
+      "reward_type": "cashback",
+      "point_value": {
+        "base_value": 1.0,
+        "best_value": 1.0,
+        "best_redemption": "Cash back"
+      },
+      "special_offers": [
+        "$200 bonus after spending $500 in the first 3 months"
+      ],
+      "exclusions": {
+        "groceries": [
+          "Target",
+          "Walmart"
+        ],
+        "dining": [],
+        "travel": [],
+        "gas": [],
+        "other": []
+      },
+      "spending_caps": {
+        "groceries": "",
+        "dining": "",
+        "travel": ""
+      },
+      "category_details": {
+        "dining": {
+          "rate": "3% cash back",
+          "includes": [
+            "restaurants",
+            "takeout",
+            "eligible delivery services"
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "groceries": {
+          "rate": "1% cash back",
+          "includes": [
+            "supermarkets"
+          ],
+          "excludes": [
+            "Target",
+            "Walmart"
+          ],
+          "conditions": ""
+        },
+        "travel": {
+          "rate": "5% cash back",
+          "includes": [
+            "travel purchased through Chase Travel"
+          ],
+          "excludes": [],
+          "booking_requirement": "Must book through Chase Travel",
+          "conditions": ""
+        },
+        "gas": {
+          "rate": "1% cash back",
+          "includes": [
+            "gas stations"
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "streaming": {
+          "rate": "1% cash back",
+          "includes": [],
+          "excludes": [],
+          "conditions": ""
+        },
+        "transit": {
+          "rate": "1% cash back",
+          "includes": [],
+          "excludes": [],
+          "conditions": ""
+        }
+      },
+      "rotating_categories": {
+        "has_rotating": true,
+        "current_quarter": "Q1",
+        "current_bonus_categories": [
+          "gas stations",
+          "grocery stores (excluding Target and Walmart)"
+        ],
+        "current_bonus_rate": "5% cash back",
+        "activation_required": true,
+        "quarterly_cap": "Up to $1,500/quarter"
+      },
+      "credits": [],
+      "notes": "5% cash back on up to $1,500 in combined purchases in bonus categories each quarter, 3% cash back on dining and drugstore purchases, 1% cash back on all other purchases",
+      "source_url": "https://creditcards.chase.com/cash-back-credit-cards/freedom/flex",
+      "last_updated": "2026-01-14T18:47:52.677950",
+      "image": "/card-images/chase-freedom-flex.png"
+    },
+    {
+      "id": "chase-freedom-unlimited",
+      "name": "Freedom Unlimited",
+      "issuer": "Chase",
+      "color": "#0066b2",
+      "annual_fee": 0,
+      "categories": {
+        "dining": 3,
+        "groceries": 1,
+        "travel": 5,
+        "gas": 1,
+        "streaming": 1,
+        "online_shopping": 1,
+        "transit": 1,
+        "entertainment": 1,
+        "drugstore": 3,
+        "other": 1.5
+      },
+      "reward_type": "cashback",
+      "point_value": {
+        "base_value": 1.0,
+        "best_value": 1.0,
+        "best_redemption": "Cash back"
+      },
+      "special_offers": [
+        "$300 bonus after spending $500 in the first 3 months"
+      ],
+      "exclusions": {
+        "groceries": [],
+        "dining": [],
+        "travel": [],
+        "gas": [],
+        "other": [
+          "balance transfers",
+          "cash advances",
+          "travelers checks",
+          "foreign currency",
+          "money orders",
+          "wire transfers",
+          "lottery tickets",
+          "casino gaming chips",
+          "race track wagers"
+        ]
+      },
+      "spending_caps": {
+        "groceries": "",
+        "dining": "",
+        "travel": ""
+      },
+      "category_details": {
+        "dining": {
+          "rate": "3% cash back",
+          "includes": [
+            "restaurants",
+            "takeout",
+            "eligible delivery services"
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "groceries": {
+          "rate": "1% cash back",
+          "includes": [
+            "supermarkets"
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "travel": {
+          "rate": "5% cash back",
+          "includes": [
+            "travel purchased through Chase Travel"
+          ],
+          "excludes": [],
+          "booking_requirement": "Must book through Chase Travel portal",
+          "conditions": ""
+        },
+        "gas": {
+          "rate": "1% cash back",
+          "includes": [],
+          "excludes": [],
+          "conditions": ""
+        },
+        "streaming": {
+          "rate": "1% cash back",
+          "includes": [],
+          "excludes": [],
+          "conditions": ""
+        },
+        "transit": {
+          "rate": "1% cash back",
+          "includes": [],
+          "excludes": [],
+          "conditions": ""
+        }
+      },
+      "rotating_categories": {
+        "has_rotating": false,
+        "current_quarter": "Q1",
+        "current_bonus_categories": [],
+        "current_bonus_rate": "",
+        "activation_required": false,
+        "quarterly_cap": ""
+      },
+      "credits": [],
+      "notes": "Earn a $300 bonus after spending $500 in the first 3 months. 0% intro APR for 15 months from account opening on purchases and balance transfers.",
+      "source_url": "https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited",
+      "last_updated": "2026-01-14T18:49:58.325467",
+      "image": "/card-images/chase-freedom-unlimited.png"
+    },
+    {
+      "id": "chase-sapphire-preferred",
+      "name": "Sapphire Preferred",
+      "issuer": "Chase",
+      "color": "#1a365d",
+      "annual_fee": 95,
+      "categories": {
+        "dining": 3,
+        "groceries": 3,
+        "travel": 5,
+        "gas": 1,
+        "streaming": 3,
+        "online_shopping": 1,
+        "transit": 1,
+        "entertainment": 1,
+        "drugstore": 1,
+        "other": 1
+      },
+      "reward_type": "points",
+      "point_value": {
+        "base_value": 1.0,
+        "best_value": 1.25,
+        "best_redemption": "Chase Travel Portal"
+      },
+      "special_offers": [
+        "75,000 bonus points after spending $5,000 in the first 3 months"
+      ],
+      "exclusions": {
+        "groceries": [
+          "Target",
+          "Walmart",
+          "wholesale clubs"
+        ],
+        "dining": [],
+        "travel": [
+          "hotel purchases that qualify for the $50 Annual Chase Travel Hotel Credit"
+        ],
+        "gas": [],
+        "other": []
+      },
+      "spending_caps": {
+        "groceries": "",
+        "dining": "",
+        "travel": ""
+      },
+      "category_details": {
+        "dining": {
+          "rate": "3x points",
+          "includes": [
+            "restaurants",
+            "food delivery apps",
+            "takeout"
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "groceries": {
+          "rate": "3x points",
+          "includes": [
+            "online grocery purchases"
+          ],
+          "excludes": [
+            "Target",
+            "Walmart",
+            "wholesale clubs"
+          ],
+          "conditions": ""
+        },
+        "travel": {
+          "rate": "5x points",
+          "includes": [
+            "travel purchased through Chase Travel"
+          ],
+          "excludes": [
+            "hotel purchases that qualify for the $50 Annual Chase Travel Hotel Credit"
+          ],
+          "booking_requirement": "Must book through Chase Travel portal",
+          "conditions": ""
+        },
+        "gas": {
+          "rate": "1x point",
+          "includes": [
+            "gas stations"
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "streaming": {
+          "rate": "3x points",
+          "includes": [
+            "select streaming services"
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "transit": {
+          "rate": "1x point",
+          "includes": [
+            "rideshare",
+            "public transit",
+            "parking"
+          ],
+          "excludes": [],
+          "conditions": ""
+        }
+      },
+      "rotating_categories": {
+        "has_rotating": false,
+        "current_quarter": "Q1",
+        "current_bonus_categories": [],
+        "current_bonus_rate": "",
+        "activation_required": false,
+        "quarterly_cap": ""
+      },
+      "credits": [
+        "$50 Annual Chase Travel Hotel Credit"
+      ],
+      "notes": "Earn 10% of total purchases made the previous year as bonus points each account anniversary",
+      "source_url": "https://creditcards.chase.com/rewards-credit-cards/sapphire/preferred",
+      "last_updated": "2026-01-14T18:52:03.636606",
+      "image": "/card-images/chase-sapphire-preferred.png"
+    },
+    {
+      "id": "chase-sapphire-reserve",
+      "name": "Sapphire Reserve",
+      "issuer": "Chase",
+      "color": "#0d2137",
+      "annual_fee": 795,
+      "categories": {
+        "dining": 3,
+        "groceries": 1,
+        "travel": 8,
+        "gas": 1,
+        "streaming": 1,
+        "online_shopping": 1,
+        "transit": 1,
+        "entertainment": 1,
+        "drugstore": 1,
+        "other": 1
+      },
+      "reward_type": "points",
+      "point_value": {
+        "base_value": 1.0,
+        "best_value": 2.0,
+        "best_redemption": "Chase Travel Portal"
+      },
+      "special_offers": [
+        "$300 annual travel credit",
+        "$500 credit for stays with The Edit",
+        "$100 property credit, daily breakfast for two, room upgrades (if available) and more"
+      ],
+      "exclusions": {
+        "groceries": [],
+        "dining": [],
+        "travel": [],
+        "gas": [],
+        "other": []
+      },
+      "spending_caps": {
+        "groceries": "",
+        "dining": "",
+        "travel": ""
+      },
+      "category_details": {
+        "dining": {
+          "rate": "3x points",
+          "includes": [
+            "restaurants",
+            "food delivery apps",
+            "takeout"
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "groceries": {
+          "rate": "1x point",
+          "includes": [
+            "supermarkets",
+            "grocery stores"
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "travel": {
+          "rate": "8x points on all purchases through Chase Travel, 4x points on flights booked direct, 4x points on hotels booked direct",
+          "includes": [
+            "flights",
+            "hotels",
+            "travel bookings"
+          ],
+          "excludes": [],
+          "booking_requirement": "Must book through Chase Travel portal or direct with airlines/hotels",
+          "conditions": ""
+        },
+        "gas": {
+          "rate": "1x point",
+          "includes": [
+            "gas stations"
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "streaming": {
+          "rate": "1x point",
+          "includes": [
+            "Netflix",
+            "Spotify",
+            "Disney+",
+            "etc."
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "transit": {
+          "rate": "1x point",
+          "includes": [
+            "rideshare",
+            "public transit",
+            "parking"
+          ],
+          "excludes": [],
+          "conditions": ""
+        }
+      },
+      "rotating_categories": {
+        "has_rotating": false,
+        "current_quarter": "Q1",
+        "current_bonus_categories": [],
+        "current_bonus_rate": "",
+        "activation_required": false,
+        "quarterly_cap": ""
+      },
+      "credits": [
+        "$300 annual travel credit",
+        "$300 dining credit",
+        "$120 DashPass Membership"
+      ],
+      "notes": "The $300 annual travel credit can be used for travel purchases each account anniversary year. The $500 credit for stays with The Edit requires a two-night minimum stay.",
+      "source_url": "https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve",
+      "last_updated": "2026-01-14T18:54:08.422847",
+      "image": "/card-images/chase-sapphire-reserve.png"
+    },
+    {
+      "id": "chase-amazon-prime",
+      "name": "Amazon Prime Visa",
+      "issuer": "Chase",
+      "color": "#232f3e",
+      "annual_fee": 0,
+      "categories": {
+        "dining": 2,
+        "groceries": 1,
+        "travel": 5,
+        "gas": 2,
+        "streaming": 1,
+        "online_shopping": 5,
+        "transit": 2,
+        "entertainment": 1,
+        "drugstore": 1,
+        "other": 1
+      },
+      "reward_type": "cashback",
+      "point_value": {
+        "base_value": 1.0,
+        "best_value": 1.0,
+        "best_redemption": "Statement credit or Amazon purchases"
+      },
+      "special_offers": [
+        "$150 Amazon Gift Card on approval"
+      ],
+      "exclusions": {
+        "groceries": [],
+        "dining": [],
+        "travel": [],
+        "gas": [],
+        "other": []
+      },
+      "spending_caps": {
+        "groceries": "",
+        "dining": "",
+        "travel": ""
+      },
+      "category_details": {
+        "dining": {
+          "rate": "2% cash back",
+          "includes": [
+            "restaurants",
+            "food delivery apps",
+            "takeout"
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "groceries": {
+          "rate": "1% cash back",
+          "includes": [
+            "supermarkets",
+            "grocery stores"
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "travel": {
+          "rate": "5% cash back",
+          "includes": [
+            "Chase Travel purchases"
+          ],
+          "excludes": [],
+          "booking_requirement": "Must book through Chase Travel portal or be an eligible Prime membership purchase",
+          "conditions": ""
+        },
+        "gas": {
+          "rate": "2% cash back",
+          "includes": [
+            "gas stations"
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "streaming": {
+          "rate": "1% cash back",
+          "includes": [],
+          "excludes": [],
+          "conditions": ""
+        },
+        "transit": {
+          "rate": "2% cash back",
+          "includes": [
+            "rideshare",
+            "public transit",
+            "commuting"
+          ],
+          "excludes": [],
+          "conditions": ""
+        }
+      },
+      "rotating_categories": {
+        "has_rotating": false,
+        "current_quarter": "Q1",
+        "current_bonus_categories": [],
+        "current_bonus_rate": "",
+        "activation_required": false,
+        "quarterly_cap": ""
+      },
+      "credits": [],
+      "notes": "Earn unlimited 5% back at Amazon.com, Amazon Fresh, Whole Foods Market, and on Chase Travel purchases with an eligible Prime membership. Earn unlimited 2% back at gas stations, restaurants, and on local transit and commuting. Earn unlimited 1% back on all other purchases.",
+      "source_url": "https://creditcards.chase.com/cash-back-credit-cards/amazon-prime-rewards",
+      "last_updated": "2026-01-14T18:56:13.415738",
+      "image": "/card-images/amazon-prime-visa.png"
+    },
+    {
+      "id": "chase-marriott-boundless",
+      "name": "Marriott Bonvoy Boundless",
+      "issuer": "Chase",
+      "color": "#8b0000",
+      "annual_fee": 95,
+      "categories": {
+        "dining": 3,
+        "groceries": 3,
+        "travel": 17,
+        "gas": 2,
+        "streaming": 2,
+        "online_shopping": 2,
+        "transit": 2,
+        "entertainment": 2,
+        "drugstore": 2,
+        "other": 2
+      },
+      "reward_type": "points",
+      "point_value": {
+        "base_value": 0.8,
+        "best_value": 2.5,
+        "best_redemption": "Redeem for hotel stays or transfer to airline partners"
+      },
+      "special_offers": [
+        "Earn 3 Free Night Awards after spending $3,000 on eligible purchases within 3 months of account opening",
+        "Up to $100 in statement credits on airline purchases"
+      ],
+      "exclusions": {
+        "groceries": [
+          "Target",
+          "Walmart",
+          "wholesale clubs like Costco"
+        ],
+        "dining": [],
+        "travel": [],
+        "gas": [],
+        "other": []
+      },
+      "spending_caps": {
+        "groceries": "Up to $6,000/year, then 2x points",
+        "dining": "No specific cap mentioned",
+        "travel": "No specific cap mentioned"
+      },
+      "category_details": {
+        "dining": {
+          "rate": "3x points",
+          "includes": [
+            "restaurants",
+            "food delivery apps",
+            "takeout"
+          ],
+          "excludes": [],
+          "conditions": "No specific conditions mentioned"
+        },
+        "groceries": {
+          "rate": "3x points",
+          "includes": [
+            "supermarkets",
+            "grocery stores"
+          ],
+          "excludes": [
+            "Target",
+            "Walmart",
+            "wholesale clubs like Costco"
+          ],
+          "conditions": "Up to $6,000/year, then 2x points"
+        },
+        "travel": {
+          "rate": "up to 17x points",
+          "includes": [
+            "hotels participating in Marriott Bonvoy"
+          ],
+          "excludes": [],
+          "booking_requirement": "Direct with hotels",
+          "conditions": "6x points from the card, up to 10x points from Marriott Bonvoy, and 1x point from Silver Elite Status"
+        },
+        "gas": {
+          "rate": "2x points",
+          "includes": [
+            "gas stations"
+          ],
+          "excludes": [],
+          "conditions": "No specific conditions mentioned"
+        },
+        "streaming": {
+          "rate": "2x points",
+          "includes": [
+            "streaming services"
+          ],
+          "excludes": [],
+          "conditions": "No specific conditions mentioned"
+        },
+        "transit": {
+          "rate": "2x points",
+          "includes": [
+            "rideshare",
+            "public transit",
+            "parking"
+          ],
+          "excludes": [],
+          "conditions": "No specific conditions mentioned"
+        }
+      },
+      "rotating_categories": {
+        "has_rotating": false,
+        "current_quarter": "Q1",
+        "current_bonus_categories": [],
+        "current_bonus_rate": "None",
+        "activation_required": false,
+        "quarterly_cap": "None"
+      },
+      "credits": [
+        "Annual Free Night Award",
+        "Up to $100 in statement credits on airline purchases"
+      ],
+      "notes": "Earn up to 17x total points at hotels participating in Marriott Bonvoy, automatic Silver Elite Status, and 15 Elite Night Credits towards the next level of Marriott Bonvoy Elite Status",
+      "source_url": "https://creditcards.chase.com/travel-credit-cards/marriott-bonvoy/boundless",
+      "last_updated": "2026-01-14T18:58:18.551871",
+      "image": "/card-images/marriot-bonvoy-boundless.png"
+    },
+    {
+      "id": "chase-hyatt",
+      "name": "World of Hyatt",
+      "issuer": "Chase",
+      "color": "#6b4c9a",
+      "annual_fee": 95,
+      "categories": {
+        "dining": 2,
+        "groceries": 1,
+        "travel": 9,
+        "gas": 1,
+        "streaming": 1,
+        "online_shopping": 1,
+        "transit": 2,
+        "entertainment": 1,
+        "drugstore": 1,
+        "other": 1
+      },
+      "reward_type": "points",
+      "point_value": {
+        "base_value": 1.0,
+        "best_value": 2.0,
+        "best_redemption": "Transfer to Hyatt"
+      },
+      "special_offers": [
+        "Up to 60,000 Bonus Points"
+      ],
+      "exclusions": {
+        "groceries": [],
+        "dining": [],
+        "travel": [],
+        "gas": [],
+        "other": []
+      },
+      "spending_caps": {
+        "groceries": "",
+        "dining": "",
+        "travel": "Up to $15,000 spent for 2x points in the first 6 months"
+      },
+      "category_details": {
+        "dining": {
+          "rate": "2x points",
+          "includes": [
+            "restaurants",
+            "local transit and commuting",
+            "fitness club and gym memberships"
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "groceries": {
+          "rate": "1x point",
+          "includes": [
+            "grocery stores"
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "travel": {
+          "rate": "9x points",
+          "includes": [
+            "Hyatt hotels"
+          ],
+          "excludes": [],
+          "booking_requirement": "Direct with Hyatt",
+          "conditions": ""
+        },
+        "gas": {
+          "rate": "1x point",
+          "includes": [
+            "gas stations"
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "streaming": {
+          "rate": "1x point",
+          "includes": [],
+          "excludes": [],
+          "conditions": ""
+        },
+        "transit": {
+          "rate": "2x points",
+          "includes": [
+            "local transit and commuting",
+            "fitness club and gym memberships"
+          ],
+          "excludes": [],
+          "conditions": ""
+        }
+      },
+      "rotating_categories": {
+        "has_rotating": false,
+        "current_quarter": "Q1",
+        "current_bonus_categories": [],
+        "current_bonus_rate": "",
+        "activation_required": false,
+        "quarterly_cap": ""
+      },
+      "credits": [
+        "1 free night at any Category 1\u20134 Hyatt hotel or resort every year",
+        "5 tier qualifying nights credits toward status each year"
+      ],
+      "notes": "Earn up to 9x total points per $1 at Hyatt hotels, 2x points at restaurants, on airline tickets purchased directly from the airline, local transit and commuting as well as fitness club and gym memberships, and 1x point on all other purchases.",
+      "source_url": "https://creditcards.chase.com/travel-credit-cards/world-of-hyatt-credit-card",
+      "last_updated": "2026-01-14T19:00:23.778974",
+      "image": "/card-images/chase-world-of-hyatt.png"
+    },
+    {
+      "id": "chase-united-explorer",
+      "name": "United Explorer",
+      "issuer": "Chase",
+      "color": "#00467f",
+      "annual_fee": 150,
+      "categories": {
+        "dining": 2,
+        "groceries": 1,
+        "travel": 7,
+        "gas": 1,
+        "streaming": 1,
+        "online_shopping": 1,
+        "transit": 1,
+        "entertainment": 1,
+        "drugstore": 1,
+        "other": 1
+      },
+      "reward_type": "miles",
+      "point_value": {
+        "base_value": 1.0,
+        "best_value": 1.5,
+        "best_redemption": "United flights"
+      },
+      "special_offers": [
+        "60,000 Bonus Miles after $3,000 spend in first 3 months",
+        "10,000 bonus miles after adding an authorized user in the first 3 months"
+      ],
+      "exclusions": {
+        "groceries": [],
+        "dining": [],
+        "travel": [],
+        "gas": [],
+        "other": []
+      },
+      "spending_caps": {
+        "groceries": "",
+        "dining": "",
+        "travel": ""
+      },
+      "category_details": {
+        "dining": {
+          "rate": "2x miles",
+          "includes": [
+            "restaurants",
+            "food delivery services"
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "groceries": {
+          "rate": "1x mile",
+          "includes": [
+            "supermarkets",
+            "grocery stores"
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "travel": {
+          "rate": "7x total miles",
+          "includes": [
+            "United flights"
+          ],
+          "excludes": [],
+          "booking_requirement": "Direct with United",
+          "conditions": ""
+        },
+        "gas": {
+          "rate": "1x mile",
+          "includes": [
+            "gas stations"
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "streaming": {
+          "rate": "1x mile",
+          "includes": [],
+          "excludes": [],
+          "conditions": ""
+        },
+        "transit": {
+          "rate": "1x mile",
+          "includes": [],
+          "excludes": [],
+          "conditions": ""
+        }
+      },
+      "rotating_categories": {
+        "has_rotating": false,
+        "current_quarter": "Q1",
+        "current_bonus_categories": [],
+        "current_bonus_rate": "",
+        "activation_required": false,
+        "quarterly_cap": ""
+      },
+      "credits": [
+        "Up to $100 United travel credit",
+        "Up to $100 in credits on United Hotels purchases",
+        "Up to $60 in credits on rideshare purchases",
+        "Up to $120 in Instacart credits",
+        "Up to $50 in United travel credits on Avis or Budget purchases"
+      ],
+      "notes": "Earn 7x total miles on United flights, 2x miles on dining, 2x miles on hotel stays when booked directly with the hotel, and 1x mile on all other purchases. $0 intro annual fee for the first year, then $150.",
+      "source_url": "https://www2.theexplorercard.com/rewards-cards/explorer-card",
+      "last_updated": "2026-01-14T21:22:44.381882",
+      "image": "/card-images/chase-united-explorer.png"
+    },
+    {
+      "id": "chase-southwest-plus",
+      "name": "Southwest Rapid Rewards Plus",
+      "issuer": "Chase",
+      "color": "#e31837",
+      "annual_fee": 69,
+      "categories": {
+        "dining": 1,
+        "groceries": 1,
+        "travel": 2,
+        "gas": 1,
+        "streaming": 1,
+        "online_shopping": 1,
+        "transit": 1,
+        "entertainment": 1,
+        "drugstore": 1,
+        "other": 1
+      },
+      "reward_type": "points",
+      "point_value": {
+        "base_value": 1.0,
+        "best_value": 1.5,
+        "best_redemption": "Southwest Airlines flights"
+      },
+      "special_offers": [
+        "50,000 Bonus Points after spending $1,000 in the first 3 months"
+      ],
+      "exclusions": {
+        "groceries": [],
+        "dining": [],
+        "travel": [],
+        "gas": [],
+        "other": []
+      },
+      "spending_caps": {
+        "groceries": "",
+        "dining": "",
+        "travel": ""
+      },
+      "category_details": {
+        "dining": {
+          "rate": "2x points",
+          "includes": [
+            "restaurants",
+            "food delivery apps",
+            "takeout"
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "groceries": {
+          "rate": "1x point",
+          "includes": [
+            "supermarkets",
+            "grocery stores"
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "travel": {
+          "rate": "2x points",
+          "includes": [
+            "Southwest Airlines purchases"
+          ],
+          "excludes": [],
+          "booking_requirement": "Direct with Southwest Airlines",
+          "conditions": ""
+        },
+        "gas": {
+          "rate": "1x point",
+          "includes": [
+            "gas stations"
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "streaming": {
+          "rate": "1x point",
+          "includes": [
+            "Netflix",
+            "Spotify",
+            "Disney+",
+            "etc."
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "transit": {
+          "rate": "1x point",
+          "includes": [
+            "rideshare",
+            "public transit",
+            "parking"
+          ],
+          "excludes": [],
+          "conditions": ""
+        }
+      },
+      "rotating_categories": {
+        "has_rotating": false,
+        "current_quarter": "Q1",
+        "current_bonus_categories": [],
+        "current_bonus_rate": "",
+        "activation_required": false,
+        "quarterly_cap": ""
+      },
+      "credits": [],
+      "notes": "First Checked Bag Free, Standard Seat Selection Within 48 Hours Prior to Departure",
+      "source_url": "https://creditcards.chase.com/a1/southwest/AEM50kPlus1225",
+      "last_updated": "2026-01-14T21:24:51.868604",
+      "image": "/card-images/chase-southwest-plus.png"
+    },
+    {
+      "id": "chase-ihg-premier",
+      "name": "IHG One Rewards Premier",
+      "issuer": "Chase",
+      "color": "#1b4d3e",
+      "annual_fee": 99,
+      "categories": {
+        "dining": 5,
+        "groceries": 1,
+        "travel": 1,
+        "gas": 5,
+        "streaming": 1,
+        "online_shopping": 1,
+        "transit": 1,
+        "entertainment": 1,
+        "drugstore": 1,
+        "other": 3
+      },
+      "reward_type": "points",
+      "point_value": {
+        "base_value": 0.005,
+        "best_value": 0.01,
+        "best_redemption": "IHG Hotel Stays"
+      },
+      "special_offers": [
+        "140,000 Bonus Points after spending $3,000 in the first 3 months",
+        "Free Night Anniversary",
+        "$100 statement credit and 10,000 bonus points after spending $20,000 each calendar year"
+      ],
+      "exclusions": {
+        "groceries": [],
+        "dining": [],
+        "travel": [],
+        "gas": [],
+        "other": []
+      },
+      "spending_caps": {
+        "groceries": "",
+        "dining": "",
+        "travel": ""
+      },
+      "category_details": {
+        "dining": {
+          "rate": "5X points",
+          "includes": [
+            "restaurants",
+            "food delivery apps",
+            "takeout"
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "groceries": {
+          "rate": "3X points",
+          "includes": [
+            "supermarkets",
+            "grocery stores"
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "travel": {
+          "rate": "Up to 26X points",
+          "includes": [
+            "IHG Hotels and Resorts"
+          ],
+          "excludes": [],
+          "booking_requirement": "Direct with IHG",
+          "conditions": ""
+        },
+        "gas": {
+          "rate": "5X points",
+          "includes": [
+            "gas stations"
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "streaming": {
+          "rate": "3X points",
+          "includes": [],
+          "excludes": [],
+          "conditions": ""
+        },
+        "transit": {
+          "rate": "3X points",
+          "includes": [],
+          "excludes": [],
+          "conditions": ""
+        }
+      },
+      "rotating_categories": {
+        "has_rotating": false,
+        "current_quarter": "Q1",
+        "current_bonus_categories": [],
+        "current_bonus_rate": "",
+        "activation_required": false,
+        "quarterly_cap": ""
+      },
+      "credits": [
+        "$100 statement credit"
+      ],
+      "notes": "Earn up to 26X points at IHG Hotels and Resorts, 5X points on gas and dining, and 3X points on all other purchases. Automatic Platinum Elite Status and Free Night Anniversary.",
+      "source_url": "https://creditcards.chase.com/travel-credit-cards/ihg-rewards-club/premier",
+      "last_updated": "2026-01-14T19:06:29.854136",
+      "image": "/card-images/chase-ihg-premier.png"
+    },
+    {
+      "id": "amex-platinum",
+      "name": "The Platinum Card",
+      "issuer": "American Express",
+      "color": "#a8a9ad",
+      "annual_fee": 695,
+      "categories": {
+        "dining": 1,
+        "groceries": 1,
+        "travel": 5,
+        "gas": 1,
+        "streaming": 1,
+        "online_shopping": 1,
+        "transit": 1,
+        "entertainment": 1,
+        "drugstore": 1,
+        "other": 1
+      },
+      "reward_type": "points",
+      "point_value": {
+        "base_value": 0.6,
+        "best_value": 2.0,
+        "best_redemption": "Transfer to airline partners"
+      },
+      "special_offers": [
+        "$200 hotel credit",
+        "$240 dining credit"
+      ],
+      "exclusions": {
+        "groceries": [
+          "Target",
+          "Walmart",
+          "wholesale clubs like Costco"
+        ],
+        "dining": [
+          "prepaid/gift cards"
+        ],
+        "travel": [
+          "cruises",
+          "vacation packages"
+        ],
+        "gas": [
+          "superstores",
+          "warehouses"
+        ],
+        "other": [
+          "cash equivalents"
+        ]
+      },
+      "spending_caps": {
+        "groceries": "No limits",
+        "dining": "No limits",
+        "travel": "No limits"
+      },
+      "category_details": {
+        "dining": {
+          "rate": "1x point",
+          "includes": [
+            "restaurants",
+            "food delivery apps",
+            "takeout"
+          ],
+          "excludes": [
+            "prepaid/gift cards"
+          ],
+          "conditions": "No limits"
+        },
+        "groceries": {
+          "rate": "1x point",
+          "includes": [
+            "supermarkets",
+            "grocery stores"
+          ],
+          "excludes": [
+            "Target",
+            "Walmart",
+            "wholesale clubs like Costco"
+          ],
+          "conditions": "No limits"
+        },
+        "travel": {
+          "rate": "5x points",
+          "includes": [
+            "flights",
+            "hotels"
+          ],
+          "excludes": [
+            "cruises",
+            "vacation packages"
+          ],
+          "booking_requirement": "Must book directly with airlines or through Amex Travel",
+          "conditions": "No limits"
+        },
+        "gas": {
+          "rate": "1x point",
+          "includes": [
+            "gas stations"
+          ],
+          "excludes": [
+            "superstores",
+            "warehouses"
+          ],
+          "conditions": "No limits"
+        },
+        "streaming": {
+          "rate": "1x point",
+          "includes": [
+            "Netflix",
+            "Spotify",
+            "Disney+",
+            "etc."
+          ],
+          "excludes": [],
+          "conditions": "No limits"
+        },
+        "transit": {
+          "rate": "1x point",
+          "includes": [
+            "rideshare",
+            "public transit",
+            "parking"
+          ],
+          "excludes": [],
+          "conditions": "No limits"
+        }
+      },
+      "rotating_categories": {
+        "has_rotating": false,
+        "current_quarter": "Q1",
+        "current_bonus_categories": [],
+        "current_bonus_rate": "N/A",
+        "activation_required": false,
+        "quarterly_cap": "N/A"
+      },
+      "credits": [
+        "$200 hotel credit",
+        "$240 dining credit",
+        "$100 Uber credit"
+      ],
+      "notes": "No rotating categories, 5x points on travel booked directly with airlines or through Amex Travel",
+      "source_url": "https://www.americanexpress.com/us/credit-cards/card/platinum/",
+      "last_updated": "2026-01-14T19:08:31.819216",
+      "image": "/card-images/amex-platinum.png"
+    },
+    {
+      "id": "amex-gold",
+      "name": "Gold Card",
+      "issuer": "American Express",
+      "color": "#c9a227",
+      "annual_fee": 250,
+      "categories": {
+        "dining": 4,
+        "groceries": 4,
+        "travel": 3,
+        "gas": 1,
+        "streaming": 1,
+        "online_shopping": 1,
+        "transit": 1,
+        "entertainment": 1,
+        "drugstore": 1,
+        "other": 1
+      },
+      "reward_type": "points",
+      "point_value": {
+        "base_value": 0.6,
+        "best_value": 1.0,
+        "best_redemption": "Transfer to airline partners"
+      },
+      "special_offers": [
+        "$120 dining credit",
+        "$100 Uber credit"
+      ],
+      "exclusions": {
+        "groceries": [
+          "Target",
+          "Walmart",
+          "wholesale clubs like Costco"
+        ],
+        "dining": [
+          "prepaid/gift cards"
+        ],
+        "travel": [
+          "cruises",
+          "travel insurance"
+        ],
+        "gas": [
+          "supermarkets with gas stations"
+        ],
+        "other": []
+      },
+      "spending_caps": {
+        "groceries": "Up to $25,000/year, then 1x",
+        "dining": "Up to $25,000/year, then 1x",
+        "travel": "No limits"
+      },
+      "category_details": {
+        "dining": {
+          "rate": "4x points",
+          "includes": [
+            "restaurants",
+            "food delivery apps",
+            "takeout"
+          ],
+          "excludes": [
+            "prepaid/gift cards"
+          ],
+          "conditions": "Up to $25,000/year"
+        },
+        "groceries": {
+          "rate": "4x points",
+          "includes": [
+            "supermarkets",
+            "grocery stores"
+          ],
+          "excludes": [
+            "Target",
+            "Walmart",
+            "wholesale clubs like Costco"
+          ],
+          "conditions": "Up to $25,000/year"
+        },
+        "travel": {
+          "rate": "3x points",
+          "includes": [
+            "flights",
+            "hotels"
+          ],
+          "excludes": [
+            "cruises",
+            "travel insurance"
+          ],
+          "booking_requirement": "Direct with airlines/hotels or Amex Travel",
+          "conditions": "No limits"
+        },
+        "gas": {
+          "rate": "1x point",
+          "includes": [
+            "gas stations"
+          ],
+          "excludes": [
+            "supermarkets with gas stations"
+          ],
+          "conditions": "No limits"
+        },
+        "streaming": {
+          "rate": "1x point",
+          "includes": [
+            "Netflix",
+            "Spotify",
+            "Disney+",
+            "etc."
+          ],
+          "excludes": [],
+          "conditions": "No limits"
+        },
+        "transit": {
+          "rate": "1x point",
+          "includes": [
+            "rideshare",
+            "public transit",
+            "parking"
+          ],
+          "excludes": [],
+          "conditions": "No limits"
+        }
+      },
+      "rotating_categories": {
+        "has_rotating": false,
+        "current_quarter": "Q1",
+        "current_bonus_categories": [],
+        "current_bonus_rate": "None",
+        "activation_required": false,
+        "quarterly_cap": "None"
+      },
+      "credits": [
+        "$120 dining credit",
+        "$100 Uber credit"
+      ],
+      "notes": "No rotating categories, $120 dining credit and $100 Uber credit",
+      "source_url": "https://www.americanexpress.com/us/credit-cards/card/gold-card/",
+      "last_updated": "2026-01-14T19:10:33.696043",
+      "image": "/card-images/amex-gold.png"
+    },
+    {
+      "id": "amex-blue-cash-everyday",
+      "name": "Blue Cash Everyday",
+      "issuer": "American Express",
+      "color": "#006fcf",
+      "annual_fee": 0,
+      "categories": {
+        "dining": 3,
+        "groceries": 3,
+        "travel": 1,
+        "gas": 1,
+        "streaming": 1,
+        "online_shopping": 1,
+        "transit": 1,
+        "entertainment": 1,
+        "drugstore": 1,
+        "other": 1
+      },
+      "reward_type": "cashback",
+      "point_value": {
+        "base_value": 1.0,
+        "best_value": 1.0,
+        "best_redemption": "Statement credit"
+      },
+      "special_offers": [],
+      "exclusions": {
+        "groceries": [
+          "Target",
+          "Walmart",
+          "wholesale clubs like Costco"
+        ],
+        "dining": [
+          "prepaid/gift cards"
+        ],
+        "travel": [
+          "bookings through third-party travel sites"
+        ],
+        "gas": [
+          "superstores",
+          "warehouses"
+        ],
+        "other": []
+      },
+      "spending_caps": {
+        "groceries": "Up to $6,000/year, then 1%",
+        "dining": "No spending cap",
+        "travel": "No spending cap"
+      },
+      "category_details": {
+        "dining": {
+          "rate": "3% cash back",
+          "includes": [
+            "restaurants",
+            "food delivery apps",
+            "takeout"
+          ],
+          "excludes": [
+            "prepaid/gift cards"
+          ],
+          "conditions": "No rotating categories or spending caps"
+        },
+        "groceries": {
+          "rate": "3% cash back",
+          "includes": [
+            "supermarkets",
+            "grocery stores"
+          ],
+          "excludes": [
+            "Target",
+            "Walmart",
+            "wholesale clubs like Costco"
+          ],
+          "conditions": "Up to $6,000/year, then 1%"
+        },
+        "travel": {
+          "rate": "1% cash back",
+          "includes": [
+            "flights",
+            "hotels"
+          ],
+          "excludes": [
+            "bookings through third-party travel sites"
+          ],
+          "booking_requirement": "Direct with airlines/hotels or Amex Travel",
+          "conditions": "No spending caps"
+        },
+        "gas": {
+          "rate": "1% cash back",
+          "includes": [
+            "gas stations"
+          ],
+          "excludes": [
+            "superstores",
+            "warehouses"
+          ],
+          "conditions": "No spending caps"
+        },
+        "streaming": {
+          "rate": "1% cash back",
+          "includes": [
+            "Netflix",
+            "Spotify",
+            "Disney+",
+            "etc."
+          ],
+          "excludes": [],
+          "conditions": "No spending caps"
+        },
+        "transit": {
+          "rate": "1% cash back",
+          "includes": [
+            "rideshare",
+            "public transit",
+            "parking"
+          ],
+          "excludes": [],
+          "conditions": "No spending caps"
+        }
+      },
+      "rotating_categories": {
+        "has_rotating": false,
+        "current_quarter": "Q1",
+        "current_bonus_categories": [],
+        "current_bonus_rate": "N/A",
+        "activation_required": false,
+        "quarterly_cap": "N/A"
+      },
+      "credits": [],
+      "notes": "No rotating categories or spending caps for most categories, except groceries",
+      "source_url": "https://www.americanexpress.com/us/credit-cards/card/blue-cash-everyday/",
+      "last_updated": "2026-01-14T19:12:35.578268",
+      "image": "/card-images/amex-blue-cash-everyday.png"
+    },
+    {
+      "id": "amex-blue-cash-preferred",
+      "name": "Blue Cash Preferred",
+      "issuer": "American Express",
+      "color": "#006fcf",
+      "annual_fee": 95,
+      "categories": {
+        "dining": 3,
+        "groceries": 6,
+        "travel": 1,
+        "gas": 1,
+        "streaming": 1,
+        "online_shopping": 1,
+        "transit": 1,
+        "entertainment": 1,
+        "drugstore": 1,
+        "other": 1
+      },
+      "reward_type": "cashback",
+      "point_value": {
+        "base_value": 1.0,
+        "best_value": 1.0,
+        "best_redemption": "Statement credit"
+      },
+      "special_offers": [],
+      "exclusions": {
+        "groceries": [
+          "Target",
+          "Walmart",
+          "wholesale clubs like Costco"
+        ],
+        "dining": [
+          "prepaid/gift cards"
+        ],
+        "travel": [
+          "bookings through third-party travel sites"
+        ],
+        "gas": [
+          "superstores",
+          "warehouses"
+        ],
+        "other": []
+      },
+      "spending_caps": {
+        "groceries": "Up to $6,000/year, then 1%",
+        "dining": "No cap",
+        "travel": "No cap"
+      },
+      "category_details": {
+        "dining": {
+          "rate": "3% cash back",
+          "includes": [
+            "restaurants",
+            "food delivery apps",
+            "takeout"
+          ],
+          "excludes": [
+            "prepaid/gift cards"
+          ],
+          "conditions": "No rotating categories or spending caps"
+        },
+        "groceries": {
+          "rate": "6% cash back",
+          "includes": [
+            "supermarkets",
+            "grocery stores"
+          ],
+          "excludes": [
+            "Target",
+            "Walmart",
+            "wholesale clubs like Costco"
+          ],
+          "conditions": "Up to $6,000/year, then 1%"
+        },
+        "travel": {
+          "rate": "1% cash back",
+          "includes": [
+            "flights",
+            "hotels"
+          ],
+          "excludes": [
+            "bookings through third-party travel sites"
+          ],
+          "booking_requirement": "Direct with airlines/hotels or Amex Travel",
+          "conditions": "No spending caps"
+        },
+        "gas": {
+          "rate": "1% cash back",
+          "includes": [
+            "gas stations"
+          ],
+          "excludes": [
+            "superstores",
+            "warehouses"
+          ],
+          "conditions": "No spending caps"
+        },
+        "streaming": {
+          "rate": "1% cash back",
+          "includes": [
+            "Netflix",
+            "Spotify",
+            "Disney+",
+            "etc."
+          ],
+          "excludes": [],
+          "conditions": "No spending caps"
+        },
+        "transit": {
+          "rate": "1% cash back",
+          "includes": [
+            "rideshare",
+            "public transit",
+            "parking"
+          ],
+          "excludes": [],
+          "conditions": "No spending caps"
+        }
+      },
+      "rotating_categories": {
+        "has_rotating": false,
+        "current_quarter": "Q1",
+        "current_bonus_categories": [],
+        "current_bonus_rate": "N/A",
+        "activation_required": false,
+        "quarterly_cap": "N/A"
+      },
+      "credits": [],
+      "notes": "No rotating categories or quarterly spending caps. 6% cash back at U.S. supermarkets on up to $6,000 per year in purchases, then 1%. 3% cash back at U.S. gas stations, 1% cash back on other purchases.",
+      "source_url": "https://www.americanexpress.com/us/credit-cards/card/blue-cash-preferred/",
+      "last_updated": "2026-01-14T19:14:37.923041",
+      "image": "/card-images/amex-blue-cash-preferred.png"
+    },
+    {
+      "id": "amex-everyday",
+      "name": "Amex EveryDay",
+      "issuer": "American Express",
+      "color": "#002663",
+      "annual_fee": 0,
+      "categories": {
+        "dining": 2,
+        "groceries": 2,
+        "travel": 1,
+        "gas": 1,
+        "streaming": 1,
+        "online_shopping": 1,
+        "transit": 1,
+        "entertainment": 1,
+        "drugstore": 1,
+        "other": 1
+      },
+      "reward_type": "points",
+      "point_value": {
+        "base_value": 0.6,
+        "best_value": 1.0,
+        "best_redemption": "Transfer to airline/hotel partners"
+      },
+      "special_offers": [],
+      "exclusions": {
+        "groceries": [
+          "Target",
+          "Walmart",
+          "wholesale clubs like Costco"
+        ],
+        "dining": [
+          "prepaid/gift cards"
+        ],
+        "travel": [
+          "bookings through third-party travel sites"
+        ],
+        "gas": [
+          "superstores",
+          "warehouses"
+        ],
+        "other": []
+      },
+      "spending_caps": {
+        "groceries": "No cap",
+        "dining": "No cap",
+        "travel": "No cap"
+      },
+      "category_details": {
+        "dining": {
+          "rate": "2x points",
+          "includes": [
+            "restaurants",
+            "food delivery apps",
+            "takeout"
+          ],
+          "excludes": [
+            "prepaid/gift cards"
+          ],
+          "conditions": "No rotating categories or spending caps"
+        },
+        "groceries": {
+          "rate": "2x points",
+          "includes": [
+            "supermarkets",
+            "grocery stores"
+          ],
+          "excludes": [
+            "Target",
+            "Walmart",
+            "wholesale clubs like Costco"
+          ],
+          "conditions": "No rotating categories or spending caps"
+        },
+        "travel": {
+          "rate": "1x point",
+          "includes": [
+            "flights",
+            "hotels"
+          ],
+          "excludes": [
+            "bookings through third-party travel sites"
+          ],
+          "booking_requirement": "Direct with airlines/hotels or Amex Travel",
+          "conditions": "No rotating categories or spending caps"
+        },
+        "gas": {
+          "rate": "1x point",
+          "includes": [
+            "gas stations"
+          ],
+          "excludes": [
+            "superstores",
+            "warehouses"
+          ],
+          "conditions": "No rotating categories or spending caps"
+        },
+        "streaming": {
+          "rate": "1x point",
+          "includes": [
+            "Netflix",
+            "Spotify",
+            "Disney+",
+            "etc."
+          ],
+          "excludes": [],
+          "conditions": "No rotating categories or spending caps"
+        },
+        "transit": {
+          "rate": "1x point",
+          "includes": [
+            "rideshare",
+            "public transit",
+            "parking"
+          ],
+          "excludes": [],
+          "conditions": "No rotating categories or spending caps"
+        }
+      },
+      "rotating_categories": {
+        "has_rotating": false,
+        "current_quarter": "Q1",
+        "current_bonus_categories": [],
+        "current_bonus_rate": "N/A",
+        "activation_required": false,
+        "quarterly_cap": "N/A"
+      },
+      "credits": [],
+      "notes": "Earn 2x points at US supermarkets, on up to $6,000 per year in purchases",
+      "source_url": "https://www.americanexpress.com/us/credit-cards/card/amex-everyday/",
+      "last_updated": "2026-01-14T19:16:39.832892",
+      "image": "/card-images/amex-everyday.png"
+    },
+    {
+      "id": "amex-delta-gold",
+      "name": "Delta SkyMiles Gold",
+      "issuer": "American Express",
+      "color": "#003366",
+      "annual_fee": 0,
+      "categories": {
+        "dining": 2,
+        "groceries": 1,
+        "travel": 2,
+        "gas": 1,
+        "streaming": 1,
+        "online_shopping": 1,
+        "transit": 1,
+        "entertainment": 1,
+        "drugstore": 1,
+        "other": 1
+      },
+      "reward_type": "miles",
+      "point_value": {
+        "base_value": 1.0,
+        "best_value": 1.5,
+        "best_redemption": "Transfer to airline partners or redeem for travel"
+      },
+      "special_offers": [],
+      "exclusions": {
+        "groceries": [
+          "Target",
+          "Walmart",
+          "wholesale clubs like Costco"
+        ],
+        "dining": [],
+        "travel": [],
+        "gas": [],
+        "other": []
+      },
+      "spending_caps": {
+        "groceries": "No cap",
+        "dining": "No cap",
+        "travel": "No cap"
+      },
+      "category_details": {
+        "dining": {
+          "rate": "2x miles",
+          "includes": [
+            "restaurants",
+            "food delivery apps",
+            "takeout"
+          ],
+          "excludes": [],
+          "conditions": "No rotating categories or spending caps"
+        },
+        "groceries": {
+          "rate": "1x mile",
+          "includes": [
+            "supermarkets",
+            "grocery stores"
+          ],
+          "excludes": [
+            "Target",
+            "Walmart",
+            "wholesale clubs like Costco"
+          ],
+          "conditions": "No spending caps"
+        },
+        "travel": {
+          "rate": "2x miles",
+          "includes": [
+            "flights",
+            "hotels"
+          ],
+          "excludes": [],
+          "booking_requirement": "Direct with airlines or hotels, or through Amex Travel portal",
+          "conditions": "No spending caps"
+        },
+        "gas": {
+          "rate": "1x mile",
+          "includes": [
+            "gas stations"
+          ],
+          "excludes": [],
+          "conditions": "No spending caps"
+        },
+        "streaming": {
+          "rate": "1x mile",
+          "includes": [
+            "Netflix",
+            "Spotify",
+            "Disney+",
+            "etc."
+          ],
+          "excludes": [],
+          "conditions": "No spending caps"
+        },
+        "transit": {
+          "rate": "1x mile",
+          "includes": [
+            "rideshare",
+            "public transit",
+            "parking"
+          ],
+          "excludes": [],
+          "conditions": "No spending caps"
+        }
+      },
+      "rotating_categories": {
+        "has_rotating": false,
+        "current_quarter": "Q1",
+        "current_bonus_categories": [],
+        "current_bonus_rate": "N/A",
+        "activation_required": false,
+        "quarterly_cap": "N/A"
+      },
+      "credits": [
+        "$100 Delta Flight Credit"
+      ],
+      "notes": "Earn 2x miles on Delta purchases, at restaurants, and at U.S. supermarkets. $100 Delta Flight Credit after spending $10,000 in a calendar year.",
+      "source_url": "https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-gold-american-express-card/",
+      "last_updated": "2026-01-14T19:18:41.816381",
+      "image": "/card-images/amex-delta-gold.png"
+    },
+    {
+      "id": "amex-hilton-aspire",
+      "name": "Hilton Honors Aspire",
+      "issuer": "American Express",
+      "color": "#104c97",
+      "annual_fee": 450,
+      "categories": {
+        "dining": 8,
+        "groceries": 3,
+        "travel": 14,
+        "gas": 1,
+        "streaming": 1,
+        "online_shopping": 1,
+        "transit": 1,
+        "entertainment": 1,
+        "drugstore": 1,
+        "other": 1
+      },
+      "reward_type": "points",
+      "point_value": {
+        "base_value": 0.5,
+        "best_value": 1.0,
+        "best_redemption": "Transfer to Hilton Honors"
+      },
+      "special_offers": [
+        "$250 resort credit",
+        "$250 airline fee credit"
+      ],
+      "exclusions": {
+        "groceries": [
+          "Target",
+          "Walmart",
+          "wholesale clubs like Costco"
+        ],
+        "dining": [
+          "prepaid/gift cards"
+        ],
+        "travel": [
+          "third-party booking sites"
+        ],
+        "gas": [],
+        "other": []
+      },
+      "spending_caps": {
+        "groceries": "No cap",
+        "dining": "No cap",
+        "travel": "No cap"
+      },
+      "category_details": {
+        "dining": {
+          "rate": "8x points",
+          "includes": [
+            "restaurants",
+            "food delivery apps",
+            "takeout"
+          ],
+          "excludes": [
+            "prepaid/gift cards"
+          ],
+          "conditions": "No rotating categories or spending caps"
+        },
+        "groceries": {
+          "rate": "3x points",
+          "includes": [
+            "supermarkets",
+            "grocery stores"
+          ],
+          "excludes": [
+            "Target",
+            "Walmart",
+            "wholesale clubs like Costco"
+          ],
+          "conditions": "No rotating categories or spending caps"
+        },
+        "travel": {
+          "rate": "14x points",
+          "includes": [
+            "flights",
+            "hotels",
+            "Hilton properties"
+          ],
+          "excludes": [
+            "third-party booking sites"
+          ],
+          "booking_requirement": "Direct with Hilton or through Amex Travel",
+          "conditions": "No rotating categories or spending caps"
+        },
+        "gas": {
+          "rate": "1x point",
+          "includes": [
+            "gas stations"
+          ],
+          "excludes": [],
+          "conditions": "No rotating categories or spending caps"
+        },
+        "streaming": {
+          "rate": "1x point",
+          "includes": [
+            "Netflix",
+            "Spotify",
+            "Disney+",
+            "etc."
+          ],
+          "excludes": [],
+          "conditions": "No rotating categories or spending caps"
+        },
+        "transit": {
+          "rate": "1x point",
+          "includes": [
+            "rideshare",
+            "public transit",
+            "parking"
+          ],
+          "excludes": [],
+          "conditions": "No rotating categories or spending caps"
+        }
+      },
+      "rotating_categories": {
+        "has_rotating": false,
+        "current_quarter": "Q1",
+        "current_bonus_categories": [],
+        "current_bonus_rate": "N/A",
+        "activation_required": false,
+        "quarterly_cap": "N/A"
+      },
+      "credits": [
+        "$250 resort credit",
+        "$250 airline fee credit"
+      ],
+      "notes": "No rotating categories. Points redeemable through Hilton Honors.",
+      "source_url": "https://www.americanexpress.com/us/credit-cards/card/hilton-honors-aspire/",
+      "last_updated": "2026-01-14T19:20:43.860052",
+      "image": "/card-images/amex-hilton-aspire.png"
+    },
+    {
+      "id": "amex-marriott-brilliant",
+      "name": "Marriott Bonvoy Brilliant",
+      "issuer": "American Express",
+      "color": "#8b0000",
+      "annual_fee": 450,
+      "categories": {
+        "dining": 3,
+        "groceries": 1,
+        "travel": 6,
+        "gas": 1,
+        "streaming": 1,
+        "online_shopping": 1,
+        "transit": 1,
+        "entertainment": 1,
+        "drugstore": 1,
+        "other": 1
+      },
+      "reward_type": "points",
+      "point_value": {
+        "base_value": 0.8,
+        "best_value": 2.0,
+        "best_redemption": "Transfer to Marriott or airline partners"
+      },
+      "special_offers": [
+        "$300 Marriott credit",
+        "25k bonus points after $5k spend"
+      ],
+      "exclusions": {
+        "groceries": [
+          "Target",
+          "Walmart",
+          "wholesale clubs like Costco"
+        ],
+        "dining": [
+          "prepaid/gift cards"
+        ],
+        "travel": [
+          "third-party bookings"
+        ],
+        "gas": [],
+        "other": []
+      },
+      "spending_caps": {
+        "groceries": "No cap",
+        "dining": "No cap",
+        "travel": "No cap"
+      },
+      "category_details": {
+        "dining": {
+          "rate": "3x points",
+          "includes": [
+            "restaurants",
+            "food delivery apps",
+            "takeout"
+          ],
+          "excludes": [
+            "prepaid/gift cards"
+          ],
+          "conditions": "No rotating categories or spending caps"
+        },
+        "groceries": {
+          "rate": "1x point",
+          "includes": [
+            "supermarkets",
+            "grocery stores"
+          ],
+          "excludes": [
+            "Target",
+            "Walmart",
+            "wholesale clubs like Costco"
+          ],
+          "conditions": "No rotating categories or spending caps"
+        },
+        "travel": {
+          "rate": "6x points",
+          "includes": [
+            "flights",
+            "hotels",
+            "Marriott bookings"
+          ],
+          "excludes": [
+            "third-party bookings"
+          ],
+          "booking_requirement": "Direct with Marriott or through Amex Travel",
+          "conditions": "No rotating categories or spending caps"
+        },
+        "gas": {
+          "rate": "1x point",
+          "includes": [
+            "gas stations"
+          ],
+          "excludes": [],
+          "conditions": "No rotating categories or spending caps"
+        },
+        "streaming": {
+          "rate": "1x point",
+          "includes": [
+            "Netflix",
+            "Spotify",
+            "Disney+",
+            "etc."
+          ],
+          "excludes": [],
+          "conditions": "No rotating categories or spending caps"
+        },
+        "transit": {
+          "rate": "1x point",
+          "includes": [
+            "rideshare",
+            "public transit",
+            "parking"
+          ],
+          "excludes": [],
+          "conditions": "No rotating categories or spending caps"
+        }
+      },
+      "rotating_categories": {
+        "has_rotating": false,
+        "current_quarter": "Q1",
+        "current_bonus_categories": [],
+        "current_bonus_rate": "N/A",
+        "activation_required": false,
+        "quarterly_cap": "N/A"
+      },
+      "credits": [
+        "$300 Marriott credit"
+      ],
+      "notes": "No rotating categories; points redeemable at Marriott or transferable to airline partners",
+      "source_url": "https://www.americanexpress.com/us/credit-cards/card/marriott-bonvoy-brilliant/",
+      "last_updated": "2026-01-14T19:22:46.086657",
+      "image": "/card-images/amex-marriott-brilliant.png"
+    },
+    {
+      "id": "capital-one-venture-x",
+      "name": "Venture X Rewards",
+      "issuer": "Capital One",
+      "color": "#1a1a1a",
+      "annual_fee": 395,
+      "categories": {
+        "dining": 5,
+        "groceries": 1,
+        "travel": 5,
+        "gas": 1,
+        "streaming": 1,
+        "online_shopping": 1,
+        "transit": 1,
+        "entertainment": 5,
+        "drugstore": 1,
+        "other": 1
+      },
+      "reward_type": "miles",
+      "point_value": {
+        "base_value": 1.0,
+        "best_value": 1.0,
+        "best_redemption": "Capital One Travel portal or transfer to airline partners"
+      },
+      "special_offers": [
+        "Airport Lounges",
+        "Global Lounge Access",
+        "Priority Pass Lounges",
+        "Capital One Dining",
+        "Capital One Entertainment"
+      ],
+      "exclusions": {
+        "groceries": [],
+        "dining": [],
+        "travel": [],
+        "gas": [],
+        "other": []
+      },
+      "spending_caps": {
+        "groceries": "",
+        "dining": "",
+        "travel": ""
+      },
+      "category_details": {
+        "dining": {
+          "rate": "5X miles",
+          "includes": [
+            "restaurants",
+            "food delivery apps",
+            "takeout"
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "groceries": {
+          "rate": "1X mile",
+          "includes": [
+            "supermarkets",
+            "grocery stores"
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "travel": {
+          "rate": "5X miles",
+          "includes": [
+            "flights",
+            "hotels"
+          ],
+          "excludes": [],
+          "booking_requirement": "Direct with airlines/hotels or through Capital One Travel portal",
+          "conditions": ""
+        },
+        "gas": {
+          "rate": "1X mile",
+          "includes": [
+            "gas stations"
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "streaming": {
+          "rate": "1X mile",
+          "includes": [
+            "Netflix",
+            "Spotify",
+            "Disney+",
+            "etc."
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "transit": {
+          "rate": "1X mile",
+          "includes": [
+            "rideshare",
+            "public transit",
+            "parking"
+          ],
+          "excludes": [],
+          "conditions": ""
+        }
+      },
+      "rotating_categories": {
+        "has_rotating": false,
+        "current_quarter": "Q1",
+        "current_bonus_categories": [],
+        "current_bonus_rate": "",
+        "activation_required": false,
+        "quarterly_cap": ""
+      },
+      "credits": [
+        "$300 travel credit"
+      ],
+      "notes": "Earn 5X miles on Capital One Entertainment purchases, and 5X miles on travel booked through Capital One Travel portal. Access to Capital One Lounges and Priority Pass Lounges.",
+      "source_url": "https://www.capitalone.com/credit-cards/venture-x/",
+      "last_updated": "2026-01-14T19:24:50.343254",
+      "image": "/card-images/capital-one-venture-x.png"
+    },
+    {
+      "id": "capital-one-venture",
+      "name": "Venture Rewards",
+      "issuer": "Capital One",
+      "color": "#d03027",
+      "annual_fee": 95,
+      "categories": {
+        "dining": 2,
+        "groceries": 2,
+        "travel": 5,
+        "gas": 2,
+        "streaming": 2,
+        "online_shopping": 2,
+        "transit": 2,
+        "entertainment": 2,
+        "drugstore": 2,
+        "other": 2
+      },
+      "reward_type": "miles",
+      "point_value": {
+        "base_value": 1.0,
+        "best_value": 1.0,
+        "best_redemption": "Travel redemptions"
+      },
+      "special_offers": [
+        "75,000 bonus miles",
+        "$50 experience credit on every Lifestyle Collection stay",
+        "Up to $120 credit for Global Entry or TSA PreCheck"
+      ],
+      "exclusions": {
+        "groceries": [],
+        "dining": [],
+        "travel": [],
+        "gas": [],
+        "other": []
+      },
+      "spending_caps": {
+        "groceries": "",
+        "dining": "",
+        "travel": ""
+      },
+      "category_details": {
+        "dining": {
+          "rate": "2X miles",
+          "includes": [
+            "restaurants",
+            "food delivery apps",
+            "takeout"
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "groceries": {
+          "rate": "2X miles",
+          "includes": [
+            "supermarkets",
+            "grocery stores"
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "travel": {
+          "rate": "5X miles",
+          "includes": [
+            "hotels",
+            "vacation rentals",
+            "rental cars"
+          ],
+          "excludes": [],
+          "booking_requirement": "Must book through Capital One Travel",
+          "conditions": ""
+        },
+        "gas": {
+          "rate": "2X miles",
+          "includes": [
+            "gas stations"
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "streaming": {
+          "rate": "2X miles",
+          "includes": [
+            "streaming services"
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "transit": {
+          "rate": "2X miles",
+          "includes": [
+            "rideshare",
+            "public transit",
+            "parking"
+          ],
+          "excludes": [],
+          "conditions": ""
+        }
+      },
+      "rotating_categories": {
+        "has_rotating": false,
+        "current_quarter": "Q1",
+        "current_bonus_categories": [],
+        "current_bonus_rate": "",
+        "activation_required": false,
+        "quarterly_cap": ""
+      },
+      "credits": [
+        "Up to $120 credit for Global Entry or TSA PreCheck",
+        "$50 experience credit on every Lifestyle Collection stay"
+      ],
+      "notes": "No foreign transaction fees, no blackout dates, and miles don't expire for the life of the account.",
+      "source_url": "https://www.capitalone.com/credit-cards/venture/",
+      "last_updated": "2026-01-14T19:26:54.451195",
+      "image": "/card-images/capital-one-venture.png"
+    },
+    {
+      "id": "capital-one-quicksilver",
+      "name": "Quicksilver Cash Rewards",
+      "issuer": "Capital One",
+      "color": "#a8a9ad",
+      "annual_fee": 0,
+      "categories": {
+        "dining": 1.5,
+        "groceries": 1.5,
+        "travel": 1.5,
+        "gas": 1.5,
+        "streaming": 1.5,
+        "online_shopping": 1.5,
+        "transit": 1.5,
+        "entertainment": 1.5,
+        "drugstore": 1.5,
+        "other": 1.5
+      },
+      "reward_type": "cashback",
+      "point_value": {
+        "base_value": 1.0,
+        "best_value": 1.0,
+        "best_redemption": "Statement credit"
+      },
+      "special_offers": [
+        "$200 cash bonus"
+      ],
+      "exclusions": {
+        "groceries": [],
+        "dining": [],
+        "travel": [],
+        "gas": [],
+        "other": []
+      },
+      "spending_caps": {
+        "groceries": "No cap",
+        "dining": "No cap",
+        "travel": "No cap"
+      },
+      "category_details": {
+        "dining": {
+          "rate": "1.5% cash back",
+          "includes": [
+            "restaurants",
+            "food delivery apps",
+            "takeout"
+          ],
+          "excludes": [],
+          "conditions": "No rotating categories or spending caps"
+        },
+        "groceries": {
+          "rate": "1.5% cash back",
+          "includes": [
+            "supermarkets",
+            "grocery stores"
+          ],
+          "excludes": [],
+          "conditions": "No rotating categories or spending caps"
+        },
+        "travel": {
+          "rate": "1.5% cash back",
+          "includes": [
+            "flights",
+            "hotels"
+          ],
+          "excludes": [],
+          "booking_requirement": "Direct bookings count",
+          "conditions": "No rotating categories or spending caps"
+        },
+        "gas": {
+          "rate": "1.5% cash back",
+          "includes": [
+            "gas stations"
+          ],
+          "excludes": [],
+          "conditions": "No rotating categories or spending caps"
+        },
+        "streaming": {
+          "rate": "1.5% cash back",
+          "includes": [
+            "Netflix",
+            "Spotify",
+            "Disney+",
+            "etc."
+          ],
+          "excludes": [],
+          "conditions": "No rotating categories or spending caps"
+        },
+        "transit": {
+          "rate": "1.5% cash back",
+          "includes": [
+            "rideshare",
+            "public transit",
+            "parking"
+          ],
+          "excludes": [],
+          "conditions": "No rotating categories or spending caps"
+        }
+      },
+      "rotating_categories": {
+        "has_rotating": false,
+        "current_quarter": "Q1",
+        "current_bonus_categories": [],
+        "current_bonus_rate": "None",
+        "activation_required": false,
+        "quarterly_cap": "None"
+      },
+      "credits": [],
+      "notes": "Unlimited 1.5% cash back on every purchase, every day. $200 cash bonus for new cardmembers.",
+      "source_url": "https://www.capitalone.com/credit-cards/quicksilver/",
+      "last_updated": "2026-01-14T19:28:58.662095",
+      "image": "/card-images/capital-one-quicksilver.png"
+    },
+    {
+      "id": "capital-one-savor",
+      "name": "Savor Cash Rewards",
+      "issuer": "Capital One",
+      "color": "#d03027",
+      "annual_fee": 0,
+      "categories": {
+        "dining": 3,
+        "groceries": 3,
+        "travel": 5,
+        "gas": 1,
+        "streaming": 3,
+        "online_shopping": 1,
+        "transit": 1,
+        "entertainment": 3,
+        "drugstore": 1,
+        "other": 1
+      },
+      "reward_type": "cashback",
+      "point_value": {
+        "base_value": 1.0,
+        "best_value": 1.0,
+        "best_redemption": "Statement credit"
+      },
+      "special_offers": [
+        "$200 cash bonus after spending $500 within 3 months of account opening"
+      ],
+      "exclusions": {
+        "groceries": [
+          "superstores like Walmart and Target"
+        ],
+        "dining": [
+          "golf courses",
+          "collegiate sporting events",
+          "non-industry entertainment merchant codes"
+        ],
+        "travel": [],
+        "gas": [],
+        "other": []
+      },
+      "spending_caps": {
+        "groceries": "No limits",
+        "dining": "No limits",
+        "travel": "No limits"
+      },
+      "category_details": {
+        "dining": {
+          "rate": "3% cash back",
+          "includes": [
+            "restaurants",
+            "cafes",
+            "bars",
+            "lounges",
+            "fast-food chains",
+            "bakeries"
+          ],
+          "excludes": [
+            "golf courses",
+            "collegiate sporting events",
+            "non-industry entertainment merchant codes"
+          ],
+          "conditions": "No limits"
+        },
+        "groceries": {
+          "rate": "3% cash back",
+          "includes": [
+            "supermarkets",
+            "meat lockers",
+            "freezers",
+            "dairy product stores",
+            "specialty markets"
+          ],
+          "excludes": [
+            "superstores like Walmart and Target"
+          ],
+          "conditions": "No limits"
+        },
+        "travel": {
+          "rate": "5% cash back",
+          "includes": [
+            "hotels",
+            "vacation rentals",
+            "rental cars"
+          ],
+          "excludes": [],
+          "booking_requirement": "Must book through Capital One Travel",
+          "conditions": "No limits"
+        },
+        "gas": {
+          "rate": "1% cash back",
+          "includes": [
+            "gas stations"
+          ],
+          "excludes": [],
+          "conditions": "No limits"
+        },
+        "streaming": {
+          "rate": "3% cash back",
+          "includes": [
+            "Netflix",
+            "Hulu",
+            "Disney+",
+            "other music and video streaming services"
+          ],
+          "excludes": [],
+          "conditions": "No limits"
+        },
+        "transit": {
+          "rate": "1% cash back",
+          "includes": [],
+          "excludes": [],
+          "conditions": "No limits"
+        }
+      },
+      "rotating_categories": {
+        "has_rotating": false,
+        "current_quarter": "Q1",
+        "current_bonus_categories": [],
+        "current_bonus_rate": "No rotating categories",
+        "activation_required": false,
+        "quarterly_cap": "No limits"
+      },
+      "credits": [],
+      "notes": "No rotating categories, no spending caps, and no limits on rewards earnings",
+      "source_url": "https://www.capitalone.com/credit-cards/savor/",
+      "last_updated": "2026-01-14T19:31:02.980910",
+      "image": "/card-images/capital-one-savor.png"
+    },
+    {
+      "id": "capital-one-savorone",
+      "name": "SavorOne Rewards",
+      "issuer": "Capital One",
+      "color": "#2c2c2c",
+      "annual_fee": 39,
+      "categories": {
+        "dining": 3,
+        "groceries": 3,
+        "travel": 1,
+        "gas": 1,
+        "streaming": 3,
+        "online_shopping": 1,
+        "transit": 1,
+        "entertainment": 3,
+        "drugstore": 1,
+        "other": 1
+      },
+      "reward_type": "cashback",
+      "point_value": {
+        "base_value": 1.0,
+        "best_value": 1.0,
+        "best_redemption": "Statement credit"
+      },
+      "special_offers": [],
+      "exclusions": {
+        "groceries": [
+          "superstores like Walmart and Target"
+        ],
+        "dining": [
+          "hotel restaurants",
+          "food trucks or food carts that don't categorize themselves as dining merchants"
+        ],
+        "travel": [],
+        "gas": [],
+        "other": []
+      },
+      "spending_caps": {
+        "groceries": "No limits mentioned",
+        "dining": "No limits mentioned",
+        "travel": "No limits mentioned"
+      },
+      "category_details": {
+        "dining": {
+          "rate": "3% cash back",
+          "includes": [
+            "restaurants",
+            "cafes",
+            "bars",
+            "lounges",
+            "fast-food chains",
+            "bakeries"
+          ],
+          "excludes": [
+            "hotel restaurants",
+            "food trucks or food carts that don't categorize themselves as dining merchants"
+          ],
+          "conditions": "No limits mentioned"
+        },
+        "groceries": {
+          "rate": "3% cash back",
+          "includes": [
+            "supermarkets",
+            "meat lockers",
+            "freezers",
+            "dairy product stores",
+            "specialty markets"
+          ],
+          "excludes": [
+            "superstores like Walmart and Target"
+          ],
+          "conditions": "No limits mentioned"
+        },
+        "travel": {
+          "rate": "1% cash back",
+          "includes": [],
+          "excludes": [],
+          "booking_requirement": "No requirements mentioned",
+          "conditions": "No limits mentioned"
+        },
+        "gas": {
+          "rate": "1% cash back",
+          "includes": [],
+          "excludes": [],
+          "conditions": "No limits mentioned"
+        },
+        "streaming": {
+          "rate": "3% cash back",
+          "includes": [
+            "Netflix",
+            "Hulu",
+            "Disney+",
+            "other eligible music and video streaming services"
+          ],
+          "excludes": [
+            "Verizon FIOS On Demand",
+            "audiobook subscriptions",
+            "fitness programming"
+          ],
+          "conditions": "No limits mentioned"
+        },
+        "transit": {
+          "rate": "1% cash back",
+          "includes": [],
+          "excludes": [],
+          "conditions": "No limits mentioned"
+        }
+      },
+      "rotating_categories": {
+        "has_rotating": false,
+        "current_quarter": "Q1",
+        "current_bonus_categories": [],
+        "current_bonus_rate": "No rotating categories",
+        "activation_required": false,
+        "quarterly_cap": "No limits mentioned"
+      },
+      "credits": [],
+      "notes": "No rotating categories, no spending caps mentioned",
+      "source_url": "https://www.capitalone.com/credit-cards/savorone/",
+      "last_updated": "2026-01-14T21:26:56.151821",
+      "image": "/card-images/capital-one-savorone.png"
+    },
+    {
+      "id": "citi-double-cash",
+      "name": "Double Cash",
+      "issuer": "Citi",
+      "color": "#003b70",
+      "annual_fee": 0,
+      "categories": {
+        "dining": 1,
+        "groceries": 1,
+        "travel": 5,
+        "gas": 1,
+        "streaming": 1,
+        "online_shopping": 1,
+        "transit": 1,
+        "entertainment": 1,
+        "drugstore": 1,
+        "other": 2
+      },
+      "reward_type": "cashback",
+      "point_value": {
+        "base_value": 1.0,
+        "best_value": 1.0,
+        "best_redemption": "Statement credit, direct deposit or check"
+      },
+      "special_offers": [],
+      "exclusions": {
+        "groceries": [],
+        "dining": [],
+        "travel": [],
+        "gas": [],
+        "other": [
+          "balance transfers",
+          "cash advances",
+          "account fees",
+          "interest",
+          "returned items"
+        ]
+      },
+      "spending_caps": {
+        "groceries": "",
+        "dining": "",
+        "travel": ""
+      },
+      "category_details": {
+        "dining": {
+          "rate": "2x points",
+          "includes": [
+            "restaurants",
+            "food delivery apps",
+            "takeout"
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "groceries": {
+          "rate": "2x points",
+          "includes": [
+            "supermarkets",
+            "grocery stores"
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "travel": {
+          "rate": "5x points",
+          "includes": [
+            "hotels",
+            "car rentals",
+            "attractions"
+          ],
+          "excludes": [],
+          "booking_requirement": "Must book through Citi Travel portal",
+          "conditions": ""
+        },
+        "gas": {
+          "rate": "2x points",
+          "includes": [
+            "gas stations"
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "streaming": {
+          "rate": "2x points",
+          "includes": [
+            "Netflix",
+            "Spotify",
+            "Disney+",
+            "etc."
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "transit": {
+          "rate": "2x points",
+          "includes": [
+            "rideshare",
+            "public transit",
+            "parking"
+          ],
+          "excludes": [],
+          "conditions": ""
+        }
+      },
+      "rotating_categories": {
+        "has_rotating": false,
+        "current_quarter": "Q1",
+        "current_bonus_categories": [],
+        "current_bonus_rate": "",
+        "activation_required": false,
+        "quarterly_cap": ""
+      },
+      "credits": [],
+      "notes": "Earn 5% total cash back on hotels, car rentals, and attractions booked through the Citi Travel portal, on top of the 1% when you buy and the 1% as you pay.",
+      "source_url": "https://www.citi.com/credit-cards/citi-double-cash-credit-card",
+      "last_updated": "2026-01-14T19:41:10.103341",
+      "image": "/card-images/citi-double-cash.png"
+    },
+    {
+      "id": "citi-custom-cash",
+      "name": "Custom Cash",
+      "issuer": "Citi",
+      "color": "#00558c",
+      "annual_fee": 0,
+      "categories": {
+        "dining": 5,
+        "groceries": 5,
+        "travel": 5,
+        "gas": 5,
+        "streaming": 5,
+        "online_shopping": 1,
+        "transit": 5,
+        "entertainment": 5,
+        "drugstore": 5,
+        "other": 1
+      },
+      "reward_type": "cashback",
+      "point_value": {
+        "base_value": 1.0,
+        "best_value": 1.0,
+        "best_redemption": "Statement credit, direct deposit or check"
+      },
+      "special_offers": [],
+      "exclusions": {
+        "groceries": [],
+        "dining": [],
+        "travel": [],
+        "gas": [],
+        "other": []
+      },
+      "spending_caps": {
+        "groceries": "Up to $500 spent each billing cycle, then 1%",
+        "dining": "Up to $500 spent each billing cycle, then 1%",
+        "travel": "Up to $500 spent each billing cycle, then 1%"
+      },
+      "category_details": {
+        "dining": {
+          "rate": "5% cash back",
+          "includes": [
+            "restaurants",
+            "food delivery apps",
+            "takeout"
+          ],
+          "excludes": [],
+          "conditions": "Up to $500 spent each billing cycle"
+        },
+        "groceries": {
+          "rate": "5% cash back",
+          "includes": [
+            "supermarkets",
+            "grocery stores"
+          ],
+          "excludes": [],
+          "conditions": "Up to $500 spent each billing cycle"
+        },
+        "travel": {
+          "rate": "5% cash back",
+          "includes": [
+            "select travel"
+          ],
+          "excludes": [],
+          "booking_requirement": "Direct booking or Citi Travel",
+          "conditions": "Up to $500 spent each billing cycle, plus 4% additional cash back on hotels, car rentals, and attractions booked with Citi Travel"
+        },
+        "gas": {
+          "rate": "5% cash back",
+          "includes": [
+            "gas stations"
+          ],
+          "excludes": [],
+          "conditions": "Up to $500 spent each billing cycle"
+        },
+        "streaming": {
+          "rate": "5% cash back",
+          "includes": [
+            "select streaming services"
+          ],
+          "excludes": [],
+          "conditions": "Up to $500 spent each billing cycle"
+        },
+        "transit": {
+          "rate": "5% cash back",
+          "includes": [
+            "select transit"
+          ],
+          "excludes": [],
+          "conditions": "Up to $500 spent each billing cycle"
+        }
+      },
+      "rotating_categories": {
+        "has_rotating": false,
+        "current_quarter": "Q1",
+        "current_bonus_categories": [
+          "dining",
+          "groceries",
+          "travel",
+          "gas",
+          "streaming",
+          "transit",
+          "entertainment",
+          "drugstore"
+        ],
+        "current_bonus_rate": "5% cash back",
+        "activation_required": false,
+        "quarterly_cap": "Up to $500 spent each billing cycle"
+      },
+      "credits": [],
+      "notes": "Earn 5% cash back on your top eligible spend category each billing cycle, up to $500 spent. Earn 1% cash back on all other purchases. Plus, earn 4% additional cash back on hotels, car rentals, and attractions booked with Citi Travel.",
+      "source_url": "https://www.citi.com/credit-cards/citi-custom-cash-credit-card",
+      "last_updated": "2026-01-14T21:28:58.288661",
+      "image": "/card-images/citi-custom-cash.png"
+    },
+    {
+      "id": "citi-costco",
+      "name": "Costco Anywhere Visa",
+      "issuer": "Citi",
+      "color": "#e31837",
+      "annual_fee": 0,
+      "categories": {
+        "dining": 1,
+        "groceries": 1,
+        "travel": 1,
+        "gas": 1,
+        "streaming": 1,
+        "online_shopping": 1,
+        "transit": 1,
+        "entertainment": 1,
+        "drugstore": 1,
+        "other": 1
+      },
+      "reward_type": "points",
+      "point_value": {
+        "base_value": 0.01,
+        "best_value": 0.01,
+        "best_redemption": "Statement credit"
+      },
+      "special_offers": [],
+      "exclusions": {
+        "groceries": [
+          "Target",
+          "Walmart",
+          "wholesale clubs like Costco"
+        ],
+        "dining": [],
+        "travel": [],
+        "gas": [],
+        "other": []
+      },
+      "spending_caps": {
+        "groceries": "",
+        "dining": "",
+        "travel": ""
+      },
+      "category_details": {
+        "dining": {
+          "rate": "1x point",
+          "includes": [
+            "restaurants",
+            "food delivery apps",
+            "takeout"
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "groceries": {
+          "rate": "1x point",
+          "includes": [
+            "supermarkets",
+            "grocery stores"
+          ],
+          "excludes": [
+            "Target",
+            "Walmart",
+            "wholesale clubs like Costco"
+          ],
+          "conditions": ""
+        },
+        "travel": {
+          "rate": "1x point",
+          "includes": [
+            "flights",
+            "hotels"
+          ],
+          "excludes": [],
+          "booking_requirement": "Direct with airlines/hotels",
+          "conditions": ""
+        },
+        "gas": {
+          "rate": "1x point",
+          "includes": [
+            "gas stations"
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "streaming": {
+          "rate": "1x point",
+          "includes": [
+            "Netflix",
+            "Spotify",
+            "Disney+"
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "transit": {
+          "rate": "1x point",
+          "includes": [
+            "rideshare",
+            "public transit",
+            "parking"
+          ],
+          "excludes": [],
+          "conditions": ""
+        }
+      },
+      "rotating_categories": {
+        "has_rotating": false,
+        "current_quarter": "Q1",
+        "current_bonus_categories": [],
+        "current_bonus_rate": "",
+        "activation_required": false,
+        "quarterly_cap": ""
+      },
+      "credits": [],
+      "notes": "No specific reward information available for the Costco Anywhere Visa card.",
+      "source_url": "https://www.citi.com/credit-cards/costco-anywhere-visa-credit-card",
+      "last_updated": "2026-01-14T22:02:12.906682",
+      "image": "/card-images/citi-costco.png"
+    },
+    {
+      "id": "citi-strata-premier",
+      "name": "Strata Premier",
+      "issuer": "Citi",
+      "color": "#1a1a1a",
+      "annual_fee": 0,
+      "categories": {
+        "dining": 1,
+        "groceries": 1,
+        "travel": 1,
+        "gas": 1,
+        "streaming": 1,
+        "online_shopping": 1,
+        "transit": 1,
+        "entertainment": 1,
+        "drugstore": 1,
+        "other": 1
+      },
+      "reward_type": "cashback",
+      "point_value": {
+        "base_value": 1.0,
+        "best_value": 1.0,
+        "best_redemption": "Statement credit"
+      },
+      "special_offers": [],
+      "exclusions": {},
+      "spending_caps": {},
+      "credits": [],
+      "notes": "Data not available - using defaults",
+      "source_url": "https://www.citi.com/credit-cards/citi-strata-premier-credit-card",
+      "last_updated": "2026-01-01T20:05:13.973108",
+      "image": "/card-images/citi-strata-premier.webp"
+    },
+    {
+      "id": "wells-fargo-active-cash",
+      "name": "Active Cash",
+      "issuer": "Wells Fargo",
+      "color": "#cd1409",
+      "annual_fee": 0,
+      "categories": {
+        "dining": 2,
+        "groceries": 2,
+        "travel": 2,
+        "gas": 2,
+        "streaming": 2,
+        "online_shopping": 2,
+        "transit": 2,
+        "entertainment": 2,
+        "drugstore": 2,
+        "other": 2
+      },
+      "reward_type": "cashback",
+      "point_value": {
+        "base_value": 1.0,
+        "best_value": 1.0,
+        "best_redemption": "Statement credit or direct deposit"
+      },
+      "special_offers": [
+        "$200 cash rewards bonus when you spend $500 in purchases in the first 3 months"
+      ],
+      "exclusions": {
+        "groceries": [],
+        "dining": [],
+        "travel": [],
+        "gas": [],
+        "other": []
+      },
+      "spending_caps": {
+        "groceries": "No spending cap",
+        "dining": "No spending cap",
+        "travel": "No spending cap"
+      },
+      "category_details": {
+        "dining": {
+          "rate": "2% cash back",
+          "includes": [
+            "restaurants",
+            "food delivery apps",
+            "takeout"
+          ],
+          "excludes": [],
+          "conditions": "No rotating categories or spending caps"
+        },
+        "groceries": {
+          "rate": "2% cash back",
+          "includes": [
+            "supermarkets",
+            "grocery stores"
+          ],
+          "excludes": [],
+          "conditions": "No rotating categories or spending caps"
+        },
+        "travel": {
+          "rate": "2% cash back",
+          "includes": [
+            "flights",
+            "hotels"
+          ],
+          "excludes": [],
+          "booking_requirement": "No specific booking requirement",
+          "conditions": "No rotating categories or spending caps"
+        },
+        "gas": {
+          "rate": "2% cash back",
+          "includes": [
+            "gas stations"
+          ],
+          "excludes": [],
+          "conditions": "No rotating categories or spending caps"
+        },
+        "streaming": {
+          "rate": "2% cash back",
+          "includes": [
+            "Netflix",
+            "Spotify",
+            "Disney+",
+            "etc."
+          ],
+          "excludes": [],
+          "conditions": "No rotating categories or spending caps"
+        },
+        "transit": {
+          "rate": "2% cash back",
+          "includes": [
+            "rideshare",
+            "public transit",
+            "parking"
+          ],
+          "excludes": [],
+          "conditions": "No rotating categories or spending caps"
+        }
+      },
+      "rotating_categories": {
+        "has_rotating": false,
+        "current_quarter": "Q1",
+        "current_bonus_categories": [],
+        "current_bonus_rate": "N/A",
+        "activation_required": false,
+        "quarterly_cap": "N/A"
+      },
+      "credits": [],
+      "notes": "Earn unlimited 2% cash rewards on purchases with no categories to track or quarterly activations",
+      "source_url": "https://creditcards.wellsfargo.com/active-cash-credit-card/",
+      "last_updated": "2026-01-14T22:04:16.311545",
+      "image": "/card-images/wells-fargo-active-cash.webp"
+    },
+    {
+      "id": "wells-fargo-autograph",
+      "name": "Autograph",
+      "issuer": "Wells Fargo",
+      "color": "#cd1409",
+      "annual_fee": 0,
+      "categories": {
+        "dining": 1,
+        "groceries": 1,
+        "travel": 1,
+        "gas": 1,
+        "streaming": 1,
+        "online_shopping": 1,
+        "transit": 1,
+        "entertainment": 1,
+        "drugstore": 1,
+        "other": 1
+      },
+      "reward_type": "cashback",
+      "point_value": {
+        "base_value": 1.0,
+        "best_value": 1.0,
+        "best_redemption": "Statement credit"
+      },
+      "special_offers": [],
+      "exclusions": {},
+      "spending_caps": {},
+      "credits": [],
+      "notes": "Data not available - using defaults",
+      "source_url": "https://creditcards.wellsfargo.com/autograph-credit-card/",
+      "last_updated": "2026-01-01T20:15:15.902827",
+      "image": "/card-images/wells-fargo-autograph.png"
+    },
+    {
+      "id": "wells-fargo-autograph-journey",
+      "name": "Autograph Journey",
+      "issuer": "Wells Fargo",
+      "color": "#1a1a1a",
+      "annual_fee": 0,
+      "categories": {
+        "dining": 1,
+        "groceries": 1,
+        "travel": 1,
+        "gas": 1,
+        "streaming": 1,
+        "online_shopping": 1,
+        "transit": 1,
+        "entertainment": 1,
+        "drugstore": 1,
+        "other": 1
+      },
+      "reward_type": "cashback",
+      "point_value": {
+        "base_value": 1.0,
+        "best_value": 1.0,
+        "best_redemption": "Statement credit"
+      },
+      "special_offers": [],
+      "exclusions": {},
+      "spending_caps": {},
+      "credits": [],
+      "notes": "Data not available - using defaults",
+      "source_url": "https://creditcards.wellsfargo.com/autograph-journey-credit-card/",
+      "last_updated": "2026-01-01T20:17:16.431072",
+      "image": "/card-images/wells-fargo-autograph-journey.png"
+    },
+    {
+      "id": "wells-fargo-attune",
+      "name": "Attune",
+      "issuer": "Wells Fargo",
+      "color": "#2d5a27",
+      "annual_fee": 0,
+      "categories": {
+        "dining": 1,
+        "groceries": 1,
+        "travel": 1,
+        "gas": 1,
+        "streaming": 1,
+        "online_shopping": 1,
+        "transit": 4,
+        "entertainment": 4,
+        "drugstore": 1,
+        "other": 1
+      },
+      "reward_type": "cashback",
+      "point_value": {
+        "base_value": 1.0,
+        "best_value": 1.0,
+        "best_redemption": "statement credit"
+      },
+      "special_offers": [
+        "$100 cash rewards bonus when you spend $500 in purchases in the first 3 months"
+      ],
+      "exclusions": {
+        "groceries": [],
+        "dining": [],
+        "travel": [],
+        "gas": [],
+        "other": []
+      },
+      "spending_caps": {
+        "groceries": "",
+        "dining": "",
+        "travel": ""
+      },
+      "category_details": {
+        "dining": {
+          "rate": "1% cash back",
+          "includes": [
+            "restaurants",
+            "food delivery apps",
+            "takeout"
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "groceries": {
+          "rate": "1% cash back",
+          "includes": [
+            "supermarkets",
+            "grocery stores"
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "travel": {
+          "rate": "1% cash back",
+          "includes": [
+            "flights",
+            "hotels"
+          ],
+          "excludes": [],
+          "booking_requirement": "",
+          "conditions": ""
+        },
+        "gas": {
+          "rate": "1% cash back",
+          "includes": [
+            "gas stations"
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "streaming": {
+          "rate": "1% cash back",
+          "includes": [
+            "Netflix",
+            "Spotify",
+            "Disney+",
+            "etc."
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "transit": {
+          "rate": "4% cash back",
+          "includes": [
+            "public transportation",
+            "electric vehicle charging"
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "entertainment": {
+          "rate": "4% cash back",
+          "includes": [
+            "live events",
+            "movies"
+          ],
+          "excludes": [],
+          "conditions": ""
+        }
+      },
+      "rotating_categories": {
+        "has_rotating": false,
+        "current_quarter": "Q1",
+        "current_bonus_categories": [
+          "transit",
+          "entertainment",
+          "self-care"
+        ],
+        "current_bonus_rate": "4% cash back",
+        "activation_required": false,
+        "quarterly_cap": ""
+      },
+      "credits": [],
+      "notes": "Earn unlimited 4% cash rewards on select purchases, including self-care, select sports, recreation, and entertainment, and impactful purchases. Earn 1% cash rewards on other purchases.",
+      "source_url": "https://creditcards.wellsfargo.com/attune-credit-card/",
+      "last_updated": "2026-01-14T20:22:21.568691",
+      "image": "/card-images/wells-fargo-attune.png"
+    },
+    {
+      "id": "wells-fargo-reflect",
+      "name": "Reflect",
+      "issuer": "Wells Fargo",
+      "color": "#cd1409",
+      "annual_fee": 0,
+      "categories": {
+        "dining": 1,
+        "groceries": 1,
+        "travel": 1,
+        "gas": 1,
+        "streaming": 1,
+        "online_shopping": 1,
+        "transit": 1,
+        "entertainment": 1,
+        "drugstore": 1,
+        "other": 1
+      },
+      "reward_type": "cashback",
+      "point_value": {
+        "base_value": 0.01,
+        "best_value": 0.01,
+        "best_redemption": ""
+      },
+      "special_offers": [
+        "My Wells Fargo Deals"
+      ],
+      "exclusions": {
+        "groceries": [],
+        "dining": [],
+        "travel": [],
+        "gas": [],
+        "other": []
+      },
+      "spending_caps": {
+        "groceries": "",
+        "dining": "",
+        "travel": ""
+      },
+      "category_details": {
+        "dining": {
+          "rate": "1x",
+          "includes": [
+            "restaurants",
+            "food delivery apps",
+            "takeout"
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "groceries": {
+          "rate": "1x",
+          "includes": [
+            "supermarkets",
+            "grocery stores"
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "travel": {
+          "rate": "1x",
+          "includes": [
+            "flights",
+            "hotels"
+          ],
+          "excludes": [],
+          "booking_requirement": "",
+          "conditions": ""
+        },
+        "gas": {
+          "rate": "1x",
+          "includes": [
+            "gas stations"
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "streaming": {
+          "rate": "1x",
+          "includes": [
+            "Netflix",
+            "Spotify",
+            "Disney+",
+            "etc."
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "transit": {
+          "rate": "1x",
+          "includes": [
+            "rideshare",
+            "public transit",
+            "parking"
+          ],
+          "excludes": [],
+          "conditions": ""
+        }
+      },
+      "rotating_categories": {
+        "has_rotating": false,
+        "current_quarter": "Q1",
+        "current_bonus_categories": [],
+        "current_bonus_rate": "",
+        "activation_required": false,
+        "quarterly_cap": ""
+      },
+      "credits": [],
+      "notes": "The Wells Fargo Reflect Card offers My Wells Fargo Deals for personalized cash back rewards.",
+      "source_url": "https://creditcards.wellsfargo.com/reflect-visa-credit-card/",
+      "last_updated": "2026-01-14T22:07:20.700202",
+      "image": "/card-images/wells-fargo-reflect.png"
+    },
+    {
+      "id": "bofa-customized-cash",
+      "name": "Customized Cash Rewards",
+      "issuer": "Bank of America",
+      "color": "#012169",
+      "annual_fee": 0,
+      "categories": {
+        "dining": 1,
+        "groceries": 1,
+        "travel": 1,
+        "gas": 1,
+        "streaming": 1,
+        "online_shopping": 1,
+        "transit": 1,
+        "entertainment": 1,
+        "drugstore": 1,
+        "other": 1
+      },
+      "reward_type": "cashback",
+      "point_value": {
+        "base_value": 1.0,
+        "best_value": 1.0,
+        "best_redemption": "Statement credit"
+      },
+      "special_offers": [],
+      "exclusions": {},
+      "spending_caps": {},
+      "credits": [],
+      "notes": "Data not available - using defaults",
+      "source_url": "https://www.bankofamerica.com/credit-cards/products/cash-back-credit-card/",
+      "last_updated": "2026-01-01T20:38:27.121338",
+      "image": "/card-images/bofa-customized-cash.png"
+    },
+    {
+      "id": "bofa-unlimited-cash",
+      "name": "Unlimited Cash Rewards",
+      "issuer": "Bank of America",
+      "color": "#012169",
+      "annual_fee": 0,
+      "categories": {
+        "dining": 1,
+        "groceries": 1,
+        "travel": 1,
+        "gas": 1,
+        "streaming": 1,
+        "online_shopping": 1,
+        "transit": 1,
+        "entertainment": 1,
+        "drugstore": 1,
+        "other": 1
+      },
+      "reward_type": "cashback",
+      "point_value": {
+        "base_value": 1.0,
+        "best_value": 1.0,
+        "best_redemption": "Statement credit"
+      },
+      "special_offers": [],
+      "exclusions": {},
+      "spending_caps": {},
+      "credits": [],
+      "notes": "Data not available - using defaults",
+      "source_url": "https://www.bankofamerica.com/credit-cards/products/unlimited-cash-back-credit-card/",
+      "last_updated": "2026-01-01T20:46:30.368968",
+      "image": "/card-images/bofa-unlimited-cash.png"
+    },
+    {
+      "id": "bofa-travel-rewards",
+      "name": "Travel Rewards",
+      "issuer": "Bank of America",
+      "color": "#012169",
+      "annual_fee": 0,
+      "categories": {
+        "dining": 1,
+        "groceries": 1,
+        "travel": 1,
+        "gas": 1,
+        "streaming": 1,
+        "online_shopping": 1,
+        "transit": 1,
+        "entertainment": 1,
+        "drugstore": 1,
+        "other": 1
+      },
+      "reward_type": "cashback",
+      "point_value": {
+        "base_value": 1.0,
+        "best_value": 1.0,
+        "best_redemption": "Statement credit"
+      },
+      "special_offers": [],
+      "exclusions": {},
+      "spending_caps": {},
+      "credits": [],
+      "notes": "Data not available - using defaults",
+      "source_url": "https://www.bankofamerica.com/credit-cards/products/travel-rewards-credit-card/",
+      "last_updated": "2026-01-01T20:54:33.670335",
+      "image": "/card-images/bofa-travel-rewards.png"
+    },
+    {
+      "id": "bofa-premium-rewards",
+      "name": "Premium Rewards",
+      "issuer": "Bank of America",
+      "color": "#a8a9ad",
+      "annual_fee": 0,
+      "categories": {
+        "dining": 1,
+        "groceries": 1,
+        "travel": 1,
+        "gas": 1,
+        "streaming": 1,
+        "online_shopping": 1,
+        "transit": 1,
+        "entertainment": 1,
+        "drugstore": 1,
+        "other": 1
+      },
+      "reward_type": "points",
+      "point_value": {
+        "base_value": 0.01,
+        "best_value": 0.01,
+        "best_redemption": ""
+      },
+      "special_offers": [],
+      "exclusions": {
+        "groceries": [
+          "Target",
+          "Walmart",
+          "wholesale clubs like Costco"
+        ],
+        "dining": [],
+        "travel": [],
+        "gas": [],
+        "other": []
+      },
+      "spending_caps": {
+        "groceries": "",
+        "dining": "",
+        "travel": ""
+      },
+      "category_details": {
+        "dining": {
+          "rate": "1x point",
+          "includes": [
+            "restaurants",
+            "food delivery apps",
+            "takeout"
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "groceries": {
+          "rate": "1x point",
+          "includes": [
+            "supermarkets",
+            "grocery stores"
+          ],
+          "excludes": [
+            "Target",
+            "Walmart",
+            "wholesale clubs like Costco"
+          ],
+          "conditions": ""
+        },
+        "travel": {
+          "rate": "1x point",
+          "includes": [
+            "flights",
+            "hotels"
+          ],
+          "excludes": [],
+          "booking_requirement": "",
+          "conditions": ""
+        },
+        "gas": {
+          "rate": "1x point",
+          "includes": [
+            "gas stations"
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "streaming": {
+          "rate": "1x point",
+          "includes": [
+            "Netflix",
+            "Spotify",
+            "Disney+",
+            "etc."
+          ],
+          "excludes": [],
+          "conditions": ""
+        },
+        "transit": {
+          "rate": "1x point",
+          "includes": [
+            "rideshare",
+            "public transit",
+            "parking"
+          ],
+          "excludes": [],
+          "conditions": ""
+        }
+      },
+      "rotating_categories": {
+        "has_rotating": false,
+        "current_quarter": "Q1",
+        "current_bonus_categories": [],
+        "current_bonus_rate": "",
+        "activation_required": false,
+        "quarterly_cap": ""
+      },
+      "credits": [],
+      "notes": "No specific reward information available for the Bank of America Premium Rewards Credit Card.",
+      "source_url": "https://www.bankofamerica.com/credit-cards/products/premium-rewards-credit-card/",
+      "last_updated": "2026-01-14T20:59:38.458180",
+      "image": "/card-images/bofa-premium-rewards.png"
+    },
+    {
+      "id": "usbank-cash-plus",
+      "name": "Cash+ Visa Signature",
+      "issuer": "U.S. Bank",
+      "color": "#002855",
+      "annual_fee": 0,
+      "categories": {
+        "dining": 1,
+        "groceries": 1,
+        "travel": 1,
+        "gas": 1,
+        "streaming": 1,
+        "online_shopping": 1,
+        "transit": 1,
+        "entertainment": 1,
+        "drugstore": 1,
+        "other": 1
+      },
+      "reward_type": "cashback",
+      "point_value": {
+        "base_value": 1.0,
+        "best_value": 1.0,
+        "best_redemption": "Statement credit"
+      },
+      "special_offers": [],
+      "exclusions": {},
+      "spending_caps": {},
+      "credits": [],
+      "notes": "Data not available - using defaults",
+      "source_url": "https://www.usbank.com/credit-cards/cash-plus-visa-signature-credit-card.html",
+      "last_updated": "2026-01-01T21:07:42.009821",
+      "image": "/card-images/usbank-cash-plus.png"
+    },
+    {
+      "id": "usbank-altitude-go",
+      "name": "Altitude Go Visa",
+      "issuer": "U.S. Bank",
+      "color": "#002855",
+      "annual_fee": 0,
+      "categories": {
+        "dining": 1,
+        "groceries": 1,
+        "travel": 1,
+        "gas": 1,
+        "streaming": 1,
+        "online_shopping": 1,
+        "transit": 1,
+        "entertainment": 1,
+        "drugstore": 1,
+        "other": 1
+      },
+      "reward_type": "cashback",
+      "point_value": {
+        "base_value": 1.0,
+        "best_value": 1.0,
+        "best_redemption": "Statement credit"
+      },
+      "special_offers": [],
+      "exclusions": {},
+      "spending_caps": {},
+      "credits": [],
+      "notes": "Data not available - using defaults",
+      "source_url": "https://www.usbank.com/credit-cards/altitude-go-visa-signature-credit-card.html",
+      "image": "/card-images/usbank-altitude-go.png",
+      "last_updated": "2026-01-01T00:00:00.000000"
+    },
+    {
+      "id": "usbank-altitude-connect",
+      "name": "Altitude Connect",
+      "issuer": "U.S. Bank",
+      "color": "#1a1a1a",
+      "annual_fee": 0,
+      "categories": {
+        "dining": 1,
+        "groceries": 1,
+        "travel": 1,
+        "gas": 1,
+        "streaming": 1,
+        "online_shopping": 1,
+        "transit": 1,
+        "entertainment": 1,
+        "drugstore": 1,
+        "other": 1
+      },
+      "reward_type": "cashback",
+      "point_value": {
+        "base_value": 1.0,
+        "best_value": 1.0,
+        "best_redemption": "Statement credit"
+      },
+      "special_offers": [],
+      "exclusions": {},
+      "spending_caps": {},
+      "credits": [],
+      "notes": "Data not available - using defaults",
+      "source_url": "https://www.usbank.com/credit-cards/altitude-connect-visa-signature-credit-card.html",
+      "image": "/card-images/usbank-altitude-connect.png",
+      "last_updated": "2026-01-01T00:00:00.000000"
+    },
+    {
+      "id": "usbank-shopper-cash",
+      "name": "Shopper Cash Rewards",
+      "issuer": "U.S. Bank",
+      "color": "#6b4c9a",
+      "annual_fee": 0,
+      "categories": {
+        "dining": 1,
+        "groceries": 1,
+        "travel": 1,
+        "gas": 1,
+        "streaming": 1,
+        "online_shopping": 1,
+        "transit": 1,
+        "entertainment": 1,
+        "drugstore": 1,
+        "other": 1
+      },
+      "reward_type": "cashback",
+      "point_value": {
+        "base_value": 1.0,
+        "best_value": 1.0,
+        "best_redemption": "Statement credit"
+      },
+      "special_offers": [],
+      "exclusions": {},
+      "spending_caps": {},
+      "credits": [],
+      "notes": "Data not available - using defaults",
+      "source_url": "https://www.usbank.com/credit-cards/shopper-cash-rewards-visa-signature-credit-card.html",
+      "image": "/card-images/usbank-shopper-cash.png",
+      "last_updated": "2026-01-01T00:00:00.000000"
+    },
+    {
+      "id": "apple-card",
+      "name": "Apple Card",
+      "issuer": "Apple",
+      "color": "#f5f5f7",
+      "annual_fee": 0,
+      "categories": {
+        "dining": 1,
+        "groceries": 1,
+        "travel": 1,
+        "gas": 1,
+        "streaming": 1,
+        "online_shopping": 1,
+        "transit": 1,
+        "entertainment": 1,
+        "drugstore": 1,
+        "other": 1
+      },
+      "reward_type": "cashback",
+      "point_value": {
+        "base_value": 1.0,
+        "best_value": 1.0,
+        "best_redemption": "Statement credit"
+      },
+      "special_offers": [],
+      "exclusions": {},
+      "spending_caps": {},
+      "credits": [],
+      "notes": "Data not available - using defaults",
+      "source_url": "https://www.apple.com/apple-card/",
+      "image": "/card-images/apple-card.png",
+      "last_updated": "2026-01-01T00:00:00.000000"
+    },
+    {
+      "id": "discover-it",
+      "name": "Discover it Cash Back",
+      "issuer": "Discover",
+      "color": "#ff6600",
+      "annual_fee": 0,
+      "categories": {
+        "dining": 1,
+        "groceries": 1,
+        "travel": 1,
+        "gas": 1,
+        "streaming": 1,
+        "online_shopping": 1,
+        "transit": 1,
+        "entertainment": 1,
+        "drugstore": 1,
+        "other": 1
+      },
+      "reward_type": "cashback",
+      "point_value": {
+        "base_value": 1.0,
+        "best_value": 1.0,
+        "best_redemption": "Statement credit"
+      },
+      "special_offers": [],
+      "exclusions": {},
+      "spending_caps": {},
+      "credits": [],
+      "notes": "Data not available - using defaults",
+      "source_url": "https://www.discover.com/credit-cards/cash-back/it-card.html",
+      "image": "/card-images/discover-it.png",
+      "category_details": {
+        "dining": {
+          "rate": "5% cash back",
+          "includes": [
+            "Rotating quarterly categories - must activate"
+          ],
+          "excludes": [],
+          "conditions": "Up to $1,500/quarter. Categories rotate (restaurants, gas, groceries, Amazon, PayPal, etc.)"
+        }
+      },
+      "last_updated": "2026-01-01T00:00:00.000000"
+    },
+    {
+      "id": "bilt-mastercard",
+      "name": "Bilt World Elite Mastercard",
+      "issuer": "Bilt",
+      "color": "#1a1a1a",
+      "annual_fee": 0,
+      "categories": {
+        "dining": 3,
+        "groceries": 1,
+        "travel": 2,
+        "gas": 1,
+        "streaming": 1,
+        "online_shopping": 1,
+        "transit": 1,
+        "entertainment": 1,
+        "drugstore": 1,
+        "other": 1
+      },
+      "reward_type": "points",
+      "point_value": {
+        "base_value": 1.0,
+        "best_value": 1.5,
+        "best_redemption": "Travel bookings"
+      },
+      "special_offers": [],
+      "exclusions": {
+        "groceries": [
+          "Target",
+          "Walmart",
+          "wholesale clubs"
+        ],
+        "dining": [],
+        "travel": [],
+        "gas": [],
+        "other": []
+      },
+      "spending_caps": {
+        "groceries": "Up to $6,000/year, then 1%",
+        "dining": "",
+        "travel": ""
+      },
+      "credits": [],
+      "notes": "Points redeemable for travel, or can be transferred to partner loyalty programs",
+      "source_url": "https://www.biltrewards.com/card",
+      "image": "/card-images/bilt-mastercard.png",
+      "last_updated": "2026-01-01T00:00:00.000000",
+      "category_details": {
+        "dining": {
+          "rate": "3x points",
+          "includes": [
+            "Restaurants"
+          ],
+          "excludes": [],
+          "conditions": null
+        },
+        "travel": {
+          "rate": "2x points",
+          "includes": [
+            "Airlines",
+            "Hotels",
+            "Car rentals",
+            "Cruises"
+          ],
+          "excludes": [],
+          "booking_requirement": "Direct bookings or travel portals",
+          "conditions": null
+        },
+        "other": {
+          "rate": "1x points on rent",
+          "includes": [
+            "Rent payments with no fee"
+          ],
+          "excludes": [],
+          "conditions": "Up to 100,000 points/year on rent. Must make 5 transactions/month to earn on rent."
+        }
+      }
+    },
+    {
+      "id": "paypal-cashback",
+      "name": "PayPal Cashback Mastercard",
+      "issuer": "PayPal",
+      "color": "#003087",
+      "annual_fee": 0,
+      "categories": {
+        "dining": 1,
+        "groceries": 1,
+        "travel": 1,
+        "gas": 1,
+        "streaming": 1,
+        "online_shopping": 1,
+        "transit": 1,
+        "entertainment": 1,
+        "drugstore": 1,
+        "other": 1
+      },
+      "reward_type": "cashback",
+      "point_value": {
+        "base_value": 1.0,
+        "best_value": 1.0,
+        "best_redemption": "Statement credit"
+      },
+      "special_offers": [],
+      "exclusions": {},
+      "spending_caps": {},
+      "credits": [],
+      "notes": "Data not available - using defaults",
+      "source_url": "https://www.paypal.com/us/digital-wallet/manage-money/paypal-cashback-mastercard",
+      "image": "/card-images/paypal-cashback.png",
+      "last_updated": "2026-01-01T00:00:00.000000"
+    },
+    {
+      "id": "robinhood-gold",
+      "name": "Robinhood Gold Card",
+      "issuer": "Robinhood",
+      "color": "#00c805",
+      "annual_fee": 0,
+      "categories": {
+        "dining": 1,
+        "groceries": 1,
+        "travel": 1,
+        "gas": 1,
+        "streaming": 1,
+        "online_shopping": 1,
+        "transit": 1,
+        "entertainment": 1,
+        "drugstore": 1,
+        "other": 1
+      },
+      "reward_type": "cashback",
+      "point_value": {
+        "base_value": 1.0,
+        "best_value": 1.0,
+        "best_redemption": "Statement credit"
+      },
+      "special_offers": [],
+      "exclusions": {},
+      "spending_caps": {},
+      "credits": [],
+      "notes": "Data not available - using defaults",
+      "source_url": "https://robinhood.com/credit-card/",
+      "image": "/card-images/robinhood-gold.png",
+      "last_updated": "2026-01-01T00:00:00.000000"
+    }
+  ]
+}
