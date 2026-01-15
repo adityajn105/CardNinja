@@ -59,7 +59,13 @@ def load_chat_sessions() -> dict:
     if CHAT_LOG_FILE.exists():
         try:
             with open(CHAT_LOG_FILE, 'r') as f:
-                return json.load(f)
+                data = json.load(f)
+                # Ensure proper structure (handle legacy formats)
+                if not isinstance(data, dict) or "sessions" not in data:
+                    return {"sessions": {}}
+                if not isinstance(data["sessions"], dict):
+                    return {"sessions": {}}
+                return data
         except (json.JSONDecodeError, IOError):
             return {"sessions": {}}
     return {"sessions": {}}
