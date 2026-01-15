@@ -310,9 +310,10 @@ async def fetch_deep_links(links: list) -> str:
 async def call_llm_with_key(client: httpx.AsyncClient, prompt: str, api_key: str) -> str:
     """Make a single LLM API call with the given key. Returns response text or raises exception."""
     
-    if LLM_PROVIDER == "gemini":
+    if LLM_PROVIDER.lower() == "gemini":
+        model = LLM_MODEL if LLM_MODEL else "gemini-2.0-flash-exp"
         response = await client.post(
-            f"https://generativelanguage.googleapis.com/v1beta/models/{LLM_MODEL}:generateContent?key={api_key}",
+            f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={api_key}",
             json={
                 "contents": [{"parts": [{"text": prompt}]}],
                 "generationConfig": {
@@ -325,12 +326,20 @@ async def call_llm_with_key(client: httpx.AsyncClient, prompt: str, api_key: str
         data = response.json()
         return data["candidates"][0]["content"]["parts"][0]["text"]
         
-    elif LLM_PROVIDER == "groq":
+    elif LLM_PROVIDER.lower() == "groq":
+        # Use provided model or default to a known working model
+        # Clean model name (remove any quotes or whitespace)
+        model = LLM_MODEL.strip().strip('"').strip("'") if LLM_MODEL else "llama-3.3-70b-versatile"
+        url = "https://api.groq.com/openai/v1/chat/completions"
+        # Debug: print what we're sending (masked key)
+        print(f"      [DEBUG] Groq URL: {url}")
+        print(f"      [DEBUG] Model: '{model}'")
+        print(f"      [DEBUG] Key prefix: {api_key[:10]}...")
         response = await client.post(
-            "https://api.groq.com/openai/v1/chat/completions",
+            url,
             headers={"Authorization": f"Bearer {api_key}"},
             json={
-                "model": LLM_MODEL or "llama-3.3-70b-versatile",
+                "model": model,
                 "messages": [{"role": "user", "content": prompt}],
                 "temperature": 0.1,
                 "max_tokens": 2048
@@ -339,12 +348,13 @@ async def call_llm_with_key(client: httpx.AsyncClient, prompt: str, api_key: str
         response.raise_for_status()
         return response.json()["choices"][0]["message"]["content"]
         
-    elif LLM_PROVIDER == "mistral":
+    elif LLM_PROVIDER.lower() == "mistral":
+        model = LLM_MODEL if LLM_MODEL else "mistral-small-latest"
         response = await client.post(
             "https://api.mistral.ai/v1/chat/completions",
             headers={"Authorization": f"Bearer {api_key}"},
             json={
-                "model": LLM_MODEL or "mistral-small-latest",
+                "model": model,
                 "messages": [{"role": "user", "content": prompt}],
                 "temperature": 0.1,
                 "max_tokens": 2048
@@ -353,7 +363,7 @@ async def call_llm_with_key(client: httpx.AsyncClient, prompt: str, api_key: str
         response.raise_for_status()
         return response.json()["choices"][0]["message"]["content"]
     
-    elif LLM_PROVIDER == "ollama":
+    elif LLM_PROVIDER.lower() == "ollama":
         response = await client.post(
             f"{LLM_BASE_URL}/api/generate",
             json={
@@ -443,6 +453,11 @@ async def extract_with_llm(content: str, card_name: str, issuer: str) -> dict:
                 return json.loads(result)
                     
             except httpx.HTTPStatusError as e:
+                error_body = ""
+                try:
+                    error_body = e.response.text[:200]
+                except:
+                    pass
                 if e.response.status_code == 429:
                     # Rate limited - try next key immediately
                     print(f"  ⚠️  Rate limited ({key_label}), trying next key...")
@@ -451,8 +466,16 @@ async def extract_with_llm(content: str, card_name: str, issuer: str) -> dict:
                     # Service unavailable - try next key
                     print(f"  ⚠️  Service unavailable ({key_label}), trying next key...")
                     continue
+                elif e.response.status_code == 404:
+                    # Not found - print details for debugging
+                    print(f"  ⚠️  404 Not Found ({key_label})")
+                    print(f"      URL: {e.request.url}")
+                    print(f"      Response: {error_body}")
+                    continue
                 else:
                     print(f"  ⚠️  HTTP error ({key_label}): {e}")
+                    if error_body:
+                        print(f"      Response: {error_body}")
                     continue
                     
             except httpx.TimeoutException:
