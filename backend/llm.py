@@ -6,12 +6,19 @@ from typing import Optional
 from config import config
 
 # Use centralized config
-LLM_PROVIDER = config.LLM_PROVIDER
+LLM_PROVIDER = config.LLM_PROVIDER.lower() if config.LLM_PROVIDER else ""
 LLM_BASE_URL = config.LLM_BASE_URL
 LLM_MODEL = config.LLM_MODEL
-GEMINI_API_KEY = config.GEMINI_API_KEY
-GROQ_API_KEY = config.GROQ_API_KEY
-MISTRAL_API_KEY = config.MISTRAL_API_KEY
+
+# Get all API keys for rotation
+GROQ_API_KEYS = config.get_api_keys() if LLM_PROVIDER == "groq" else []
+GEMINI_API_KEYS = config.get_api_keys() if LLM_PROVIDER == "gemini" else []
+MISTRAL_API_KEYS = config.get_api_keys() if LLM_PROVIDER == "mistral" else []
+
+# Fallback to single key for backward compatibility
+GEMINI_API_KEY = GEMINI_API_KEYS[0] if GEMINI_API_KEYS else config.GEMINI_API_KEY
+GROQ_API_KEY = GROQ_API_KEYS[0] if GROQ_API_KEYS else config.GROQ_API_KEY
+MISTRAL_API_KEY = MISTRAL_API_KEYS[0] if MISTRAL_API_KEYS else config.MISTRAL_API_KEY
 
 
 async def get_llm_response(
@@ -90,10 +97,12 @@ async def _groq_chat(
     context: str,
     conversation_history: Optional[list] = None
 ) -> str:
-    """Chat using Groq - FREE tier, very fast"""
+    """Chat using Groq - FREE tier, very fast. Supports key rotation."""
     
-    if not GROQ_API_KEY:
-        print("GROQ_API_KEY not set")
+    api_keys = GROQ_API_KEYS if GROQ_API_KEYS else ([GROQ_API_KEY] if GROQ_API_KEY else [])
+    
+    if not api_keys:
+        print("GROQ_API_KEY(S) not set")
         return _fallback_response(user_message, context)
     
     messages = [{"role": "system", "content": context}]
@@ -107,23 +116,40 @@ async def _groq_chat(
     
     messages.append({"role": "user", "content": user_message})
     
-    try:
-        async with httpx.AsyncClient(timeout=60.0) as client:
-            response = await client.post(
-                "https://api.groq.com/openai/v1/chat/completions",
-                headers={"Authorization": f"Bearer {GROQ_API_KEY}"},
-                json={
-                    "model": LLM_MODEL or "llama-3.1-70b-versatile",
-                    "messages": messages,
-                    "temperature": 0.7,
-                    "max_tokens": 1024
-                }
-            )
-            response.raise_for_status()
-            return response.json()["choices"][0]["message"]["content"]
-    except Exception as e:
-        print(f"Groq error: {e}")
-        return _fallback_response(user_message, context)
+    last_error = None
+    
+    # Try each API key on rate limit
+    for i, api_key in enumerate(api_keys):
+        try:
+            async with httpx.AsyncClient(timeout=60.0) as client:
+                response = await client.post(
+                    "https://api.groq.com/openai/v1/chat/completions",
+                    headers={"Authorization": f"Bearer {api_key}"},
+                    json={
+                        "model": LLM_MODEL or "llama-3.3-70b-versatile",
+                        "messages": messages,
+                        "temperature": 0.7,
+                        "max_tokens": 1024
+                    }
+                )
+                response.raise_for_status()
+                return response.json()["choices"][0]["message"]["content"]
+        except httpx.HTTPStatusError as e:
+            last_error = e
+            if e.response.status_code == 429:
+                # Rate limited - try next key
+                print(f"Groq rate limited (key {i+1}/{len(api_keys)}), trying next...")
+                continue
+            else:
+                print(f"Groq HTTP error: {e}")
+                break
+        except Exception as e:
+            last_error = e
+            print(f"Groq error: {e}")
+            break
+    
+    print(f"All Groq keys exhausted or error: {last_error}")
+    return _fallback_response(user_message, context)
 
 
 async def _mistral_chat(

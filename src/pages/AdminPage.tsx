@@ -16,14 +16,29 @@ interface CardSourcesData {
   cards: CardSource[]
 }
 
+interface AdminCard {
+  id: string
+  name: string
+  issuer: string
+  last_updated: string
+  image?: string
+  source_url?: string
+  notes: string
+}
+
 function AdminPage() {
   const [isAuthenticated, setIsAuthenticated] = useState(false)
   const [password, setPassword] = useState('')
   const [loginError, setLoginError] = useState('')
   const [loading, setLoading] = useState<string | null>(null)
   const [message, setMessage] = useState<{ type: 'success' | 'error', text: string } | null>(null)
-  const [activeTab, setActiveTab] = useState<'logs' | 'sources'>('logs')
+  const [activeTab, setActiveTab] = useState<'logs' | 'sources' | 'cards'>('logs')
   const [cardSources, setCardSources] = useState<CardSourcesData | null>(null)
+  const [adminCards, setAdminCards] = useState<AdminCard[]>([])
+  const [updatingCard, setUpdatingCard] = useState<string | null>(null)
+  const [updateAllRunning, setUpdateAllRunning] = useState(false)
+  const [editingAdminCard, setEditingAdminCard] = useState<Record<string, unknown> | null>(null)
+  const [editingCardId, setEditingCardId] = useState<string | null>(null)
   const [editingCard, setEditingCard] = useState<CardSource | null>(null)
   const [isAddingCard, setIsAddingCard] = useState(false)
   const [selectedImage, setSelectedImage] = useState<File | null>(null)
@@ -188,7 +203,110 @@ function AdminPage() {
     if (isAuthenticated && activeTab === 'sources' && !cardSources) {
       loadCardSources()
     }
+    if (isAuthenticated && activeTab === 'cards' && adminCards.length === 0) {
+      loadAdminCards()
+    }
   }, [isAuthenticated, activeTab])
+
+  const loadAdminCards = async () => {
+    setLoading('loadCards')
+    try {
+      const data = await apiCall('/api/admin/cards')
+      if (data.cards) {
+        setAdminCards(data.cards)
+      } else {
+        throw new Error(data.error || 'Failed to load cards')
+      }
+    } catch (error) {
+      showMessage('error', error instanceof Error ? error.message : 'Failed to load cards')
+    } finally {
+      setLoading(null)
+    }
+  }
+
+  const updateSingleCard = async (cardId: string) => {
+    setUpdatingCard(cardId)
+    try {
+      const data = await apiCall('/api/admin/cards/update-single', 'POST', { card_id: cardId })
+      if (data.success) {
+        showMessage('success', `Card updated: ${cardId}`)
+        // Reload cards to show updated timestamp
+        loadAdminCards()
+      } else {
+        throw new Error(data.error || data.message || 'Update failed')
+      }
+    } catch (error) {
+      showMessage('error', error instanceof Error ? error.message : 'Update failed')
+    } finally {
+      setUpdatingCard(null)
+    }
+  }
+
+  const updateAllCards = async () => {
+    if (!confirm('Start updating ALL cards? This may take several minutes and run in the background.')) {
+      return
+    }
+    
+    setUpdateAllRunning(true)
+    try {
+      const data = await apiCall('/api/admin/cards/update-all', 'POST')
+      if (data.success) {
+        showMessage('success', data.message + ' - Check update_log.txt for progress.')
+      } else {
+        throw new Error(data.error || 'Failed to start update')
+      }
+    } catch (error) {
+      showMessage('error', error instanceof Error ? error.message : 'Failed to start update')
+    } finally {
+      setUpdateAllRunning(false)
+    }
+  }
+
+  const loadCardForEdit = async (cardId: string) => {
+    setLoading('loadCard')
+    try {
+      const data = await apiCall('/api/admin/cards/get', 'POST', { card_id: cardId })
+      if (data.success) {
+        setEditingAdminCard(data.card)
+        setEditingCardId(cardId)
+      } else {
+        throw new Error(data.error || 'Failed to load card')
+      }
+    } catch (error) {
+      showMessage('error', error instanceof Error ? error.message : 'Failed to load card')
+    } finally {
+      setLoading(null)
+    }
+  }
+
+  const saveEditedCard = async () => {
+    if (!editingAdminCard || !editingCardId) return
+    
+    setLoading('saveEditCard')
+    try {
+      const data = await apiCall('/api/admin/cards/edit', 'POST', { 
+        card_id: editingCardId, 
+        card_data: editingAdminCard 
+      })
+      if (data.success) {
+        showMessage('success', data.message)
+        setEditingAdminCard(null)
+        setEditingCardId(null)
+        loadAdminCards() // Refresh list
+      } else {
+        throw new Error(data.error || 'Failed to save card')
+      }
+    } catch (error) {
+      showMessage('error', error instanceof Error ? error.message : 'Failed to save card')
+    } finally {
+      setLoading(null)
+    }
+  }
+
+  const closeCardEditModal = () => {
+    setEditingAdminCard(null)
+    setEditingCardId(null)
+  }
 
   const handleCardEdit = (card: CardSource) => {
     setEditingCard({ ...card })
@@ -375,6 +493,12 @@ function AdminPage() {
           >
             💳 Card Sources
           </button>
+          <button 
+            className={`tab-btn ${activeTab === 'cards' ? 'active' : ''}`}
+            onClick={() => setActiveTab('cards')}
+          >
+            🔄 Cards
+          </button>
         </div>
 
         {/* Logs Tab */}
@@ -428,6 +552,217 @@ function AdminPage() {
                 </button>
               </div>
             </section>
+          </div>
+        )}
+
+        {/* Cards Tab */}
+        {activeTab === 'cards' && (
+          <div className="cards-section">
+            <div className="cards-header">
+              <h2>🔄 Card Data ({adminCards.length} cards)</h2>
+              <div className="cards-actions">
+                <button 
+                  className="action-btn refresh-btn"
+                  onClick={loadAdminCards}
+                  disabled={loading === 'loadCards'}
+                >
+                  {loading === 'loadCards' ? <span className="spinner" /> : '🔄'} Refresh List
+                </button>
+                <button 
+                  className="action-btn update-all-btn"
+                  onClick={updateAllCards}
+                  disabled={updateAllRunning}
+                >
+                  {updateAllRunning ? <span className="spinner" /> : '⚡'} Update All Cards
+                </button>
+              </div>
+            </div>
+            
+            <p className="cards-hint">
+              Cards sorted by last updated (oldest first). Click "Update" to refresh a single card using LLM.
+            </p>
+
+            {/* Card Edit Modal */}
+            {editingAdminCard && (
+              <div className="edit-modal-overlay" onClick={closeCardEditModal}>
+                <div className="edit-modal card-edit-modal" onClick={e => e.stopPropagation()}>
+                  <h3>Edit Card: {editingAdminCard.name as string}</h3>
+                  <div className="card-edit-form">
+                    <div className="edit-field">
+                      <label>Name</label>
+                      <input
+                        type="text"
+                        value={(editingAdminCard.name as string) || ''}
+                        onChange={e => setEditingAdminCard({...editingAdminCard, name: e.target.value})}
+                      />
+                    </div>
+                    <div className="edit-field">
+                      <label>Issuer</label>
+                      <input
+                        type="text"
+                        value={(editingAdminCard.issuer as string) || ''}
+                        onChange={e => setEditingAdminCard({...editingAdminCard, issuer: e.target.value})}
+                      />
+                    </div>
+                    <div className="edit-field">
+                      <label>Annual Fee</label>
+                      <input
+                        type="text"
+                        value={(editingAdminCard.annual_fee as string) || ''}
+                        onChange={e => setEditingAdminCard({...editingAdminCard, annual_fee: e.target.value})}
+                      />
+                    </div>
+                    <div className="edit-field">
+                      <label>Sign-up Bonus</label>
+                      <input
+                        type="text"
+                        value={(editingAdminCard.signup_bonus as string) || ''}
+                        onChange={e => setEditingAdminCard({...editingAdminCard, signup_bonus: e.target.value})}
+                      />
+                    </div>
+                    <div className="edit-field">
+                      <label>Image Path</label>
+                      <input
+                        type="text"
+                        value={(editingAdminCard.image as string) || ''}
+                        onChange={e => setEditingAdminCard({...editingAdminCard, image: e.target.value})}
+                      />
+                    </div>
+                    <div className="edit-field">
+                      <label>Source URL</label>
+                      <input
+                        type="text"
+                        value={(editingAdminCard.source_url as string) || ''}
+                        onChange={e => setEditingAdminCard({...editingAdminCard, source_url: e.target.value})}
+                      />
+                    </div>
+                    <div className="edit-field full-width">
+                      <label>Notes</label>
+                      <textarea
+                        value={(editingAdminCard.notes as string) || ''}
+                        onChange={e => setEditingAdminCard({...editingAdminCard, notes: e.target.value})}
+                        rows={3}
+                      />
+                    </div>
+                    <div className="edit-field full-width">
+                      <label>Rewards (JSON)</label>
+                      <textarea
+                        value={JSON.stringify(editingAdminCard.rewards || {}, null, 2)}
+                        onChange={e => {
+                          try {
+                            const rewards = JSON.parse(e.target.value)
+                            setEditingAdminCard({...editingAdminCard, rewards})
+                          } catch {
+                            // Invalid JSON, don't update
+                          }
+                        }}
+                        rows={6}
+                        className="json-field"
+                      />
+                    </div>
+                    <div className="edit-field full-width">
+                      <label>Category Details (JSON)</label>
+                      <textarea
+                        value={JSON.stringify(editingAdminCard.category_details || {}, null, 2)}
+                        onChange={e => {
+                          try {
+                            const category_details = JSON.parse(e.target.value)
+                            setEditingAdminCard({...editingAdminCard, category_details})
+                          } catch {
+                            // Invalid JSON, don't update
+                          }
+                        }}
+                        rows={6}
+                        className="json-field"
+                      />
+                    </div>
+                  </div>
+                  <div className="edit-actions">
+                    <button className="cancel-btn" onClick={closeCardEditModal}>Cancel</button>
+                    <button 
+                      className="save-btn" 
+                      onClick={saveEditedCard}
+                      disabled={loading === 'saveEditCard'}
+                    >
+                      {loading === 'saveEditCard' ? <span className="spinner" /> : '💾 Save Changes'}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            <div className="cards-table-container">
+              <table className="cards-table">
+                <thead>
+                  <tr>
+                    <th>Image</th>
+                    <th>Issuer</th>
+                    <th>Card Name</th>
+                    <th>Last Updated</th>
+                    <th>Notes</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {adminCards.map(card => (
+                    <tr key={card.id} className={card.last_updated === 'Never' ? 'never-updated' : ''}>
+                      <td className="card-image-cell">
+                        {card.image ? (
+                          <img 
+                            src={card.image} 
+                            alt={card.name}
+                            className="card-thumb"
+                            onError={(e) => {
+                              (e.target as HTMLImageElement).style.display = 'none'
+                            }}
+                          />
+                        ) : (
+                          <div className="card-thumb-placeholder">?</div>
+                        )}
+                      </td>
+                      <td className="issuer-cell">{card.issuer}</td>
+                      <td className="name-cell">
+                        {card.source_url ? (
+                          <a href={card.source_url} target="_blank" rel="noopener noreferrer">
+                            {card.name}
+                          </a>
+                        ) : (
+                          card.name
+                        )}
+                      </td>
+                      <td className={`date-cell ${card.last_updated === 'Never' ? 'never' : ''}`}>
+                        {card.last_updated}
+                      </td>
+                      <td className="notes-cell" title={card.notes}>
+                        {card.notes || '-'}
+                      </td>
+                      <td className="actions-cell">
+                        <button
+                          className="edit-card-btn"
+                          onClick={() => loadCardForEdit(card.id)}
+                          disabled={loading === 'loadCard'}
+                          title="Edit card data"
+                        >
+                          ✏️
+                        </button>
+                        <button
+                          className="update-btn"
+                          onClick={() => updateSingleCard(card.id)}
+                          disabled={updatingCard !== null}
+                          title="Update with LLM"
+                        >
+                          {updatingCard === card.id ? (
+                            <span className="spinner" />
+                          ) : (
+                            '🔄'
+                          )}
+                        </button>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </div>
         )}
 

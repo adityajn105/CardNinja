@@ -1,9 +1,9 @@
 name: Update Card Data
 
 on:
-  # Run every 6 hours
-  schedule:
-    - cron: '0 */6 * * *'
+  # Scheduled updates disabled - use manual trigger or admin panel instead
+  # schedule:
+  #   - cron: '0 */6 * * *'
   
   # Allow manual trigger from GitHub Actions tab
   workflow_dispatch:
@@ -58,4 +58,3 @@ jobs:
           git add backend/data/cards.json backend/data/update_log.txt
           git commit -m "🔄 Auto-update card data [$(date +'%Y-%m-%d %H:%M UTC')]"
           git push
-

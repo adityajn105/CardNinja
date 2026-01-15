@@ -18,6 +18,7 @@ import httpx
 import asyncio
 import sys
 import re
+import os
 from datetime import datetime
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
@@ -687,10 +688,20 @@ def is_updated_today(card_data: dict) -> bool:
         return False
 
 
-async def main():
-    """Main function to update all cards"""
+async def main(single_card_id: str = None):
+    """Main function to update cards
+    
+    Args:
+        single_card_id: If provided, only update this specific card
+    """
+    # Check for single card from env var or argument
+    single_card_id = single_card_id or os.environ.get("SINGLE_CARD_UPDATE")
+    
     print("=" * 60)
-    print("🥷 CardNinja Card Updater")
+    if single_card_id:
+        print(f"🥷 CardNinja - Updating Single Card: {single_card_id}")
+    else:
+        print("🥷 CardNinja Card Updater")
     print("=" * 60)
     
     # Print current config
@@ -745,21 +756,54 @@ async def main():
     with open(SOURCES_FILE, 'r') as f:
         sources = json.load(f)
     
-    print(f"   Found {len(sources['cards'])} cards to process")
+    # Filter to single card if specified
+    if single_card_id:
+        original_cards = sources['cards']
+        sources['cards'] = [c for c in sources['cards'] if c['id'] == single_card_id]
+        if not sources['cards']:
+            print(f"   ❌ Card not found: {single_card_id}")
+            print(f"   Available cards: {[c['id'] for c in original_cards[:5]]}...")
+            return
+        print(f"   Found card: {sources['cards'][0]['issuer']} {sources['cards'][0]['name']}")
+    else:
+        # Sort cards by last_updated (oldest first) so oldest cards get priority
+        def get_last_updated(card_source):
+            card_id = card_source['id']
+            if card_id in existing_cards:
+                date_str = existing_cards[card_id].get('last_updated', '1900-01-01')
+                try:
+                    # Try ISO format with time first (e.g., 2026-01-14T18:47:52.677950)
+                    return datetime.fromisoformat(date_str.replace('Z', '+00:00'))
+                except:
+                    try:
+                        return datetime.strptime(date_str, '%Y-%m-%d')
+                    except:
+                        return datetime(1900, 1, 1)
+            return datetime(1900, 1, 1)  # New cards get highest priority
+        
+        sources['cards'] = sorted(sources['cards'], key=get_last_updated)
+        print(f"   Found {len(sources['cards'])} cards to process (sorted oldest first)")
     
     # Process each card
-    cards_data = []
     updated_cards = []
     failed_cards = []
     skipped_cards = []
     
-    # Build initial cards_data with all existing cards (so we don't lose data if killed)
-    all_card_ids = [c["id"] for c in sources["cards"]]
-    for card_id in all_card_ids:
-        if card_id in existing_cards:
-            cards_data.append(existing_cards[card_id])
-        else:
-            cards_data.append(None)  # Placeholder
+    # For single card update, preserve all existing cards
+    if single_card_id:
+        # Load full cards.json and update just the one card
+        cards_data = list(existing_cards.values()) if existing_cards else []
+        # Create a map for quick lookup
+        cards_data_map = {c['id']: i for i, c in enumerate(cards_data)}
+    else:
+        # Build initial cards_data with all existing cards (so we don't lose data if killed)
+        cards_data = []
+        all_card_ids = [c["id"] for c in sources["cards"]]
+        for card_id in all_card_ids:
+            if card_id in existing_cards:
+                cards_data.append(existing_cards[card_id])
+            else:
+                cards_data.append(None)  # Placeholder
     
     for idx, card_source in enumerate(sources["cards"]):
         card_id = card_source["id"]
@@ -773,7 +817,17 @@ async def main():
         
         # Update the card (pass existing card so we can preserve data on failure)
         card_data, success = await update_card(card_source, existing_card)
-        cards_data[idx] = card_data  # Update in place
+        
+        # Update in place - handle both single card and bulk update
+        if single_card_id:
+            # For single card, find and update in the full list
+            if card_id in cards_data_map:
+                cards_data[cards_data_map[card_id]] = card_data
+            else:
+                # New card, append it
+                cards_data.append(card_data)
+        else:
+            cards_data[idx] = card_data
         
         if success:
             updated_cards.append(card_source)
@@ -789,14 +843,15 @@ async def main():
             json.dump(output_data, f, indent=2)
         print(f"   💾 Progress saved ({len(updated_cards)} updated, {len(failed_cards)} failed)")
         
-        # Delay between requests
-        # With multiple keys, we can use shorter delays since we rotate on rate limits
-        delay = config.SCRAPE_DELAY
-        if len(API_KEYS) > 1 and delay > 60:
-            delay = 60  # Use 1 min delay when key rotation is available
-        
-        print(f"   ⏳ Waiting {delay}s before next card...")
-        await asyncio.sleep(delay)
+        # Delay between requests (skip if single card update)
+        if not single_card_id and idx < len(sources["cards"]) - 1:
+            # With multiple keys, we can use shorter delays since we rotate on rate limits
+            delay = config.SCRAPE_DELAY
+            if len(API_KEYS) > 1 and delay > 60:
+                delay = 60  # Use 1 min delay when key rotation is available
+            
+            print(f"   ⏳ Waiting {delay}s before next card...")
+            await asyncio.sleep(delay)
     
     # Final save
     output_data = {
@@ -822,4 +877,10 @@ async def main():
 
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    import argparse
+    
+    parser = argparse.ArgumentParser(description="CardNinja Card Updater")
+    parser.add_argument("--card-id", help="Update only a specific card by ID")
+    args = parser.parse_args()
+    
+    asyncio.run(main(single_card_id=args.card_id))

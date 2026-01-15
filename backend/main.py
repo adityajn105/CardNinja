@@ -591,6 +591,193 @@ async def upload_card_image(
         )
 
 
+# ==========================================
+# Admin - Cards Management
+# ==========================================
+
+class UpdateCardRequest(BaseModel):
+    password: str
+    card_id: str
+
+
+class UpdateAllCardsRequest(BaseModel):
+    password: str
+
+
+class EditCardRequest(BaseModel):
+    password: str
+    card_id: str
+    card_data: dict
+
+
+@app.post("/api/admin/cards")
+async def get_admin_cards(request: AdminAuthRequest):
+    """Get all cards sorted by last_updated (oldest first)"""
+    if not verify_admin_password(request.password):
+        return JSONResponse(status_code=401, content={"error": "Invalid password"})
+    
+    try:
+        cards_file = config.CARDS_FILE
+        with open(cards_file, 'r') as f:
+            data = json.load(f)
+        
+        cards = data.get('cards', [])
+        
+        # Sort by last_updated (oldest first - never updated at top, recently updated at bottom)
+        def get_date(card):
+            date_str = card.get('last_updated', '1900-01-01')
+            try:
+                # Try ISO format with time first (e.g., 2026-01-14T18:47:52.677950)
+                return datetime.fromisoformat(date_str.replace('Z', '+00:00'))
+            except:
+                try:
+                    # Try simple date format
+                    return datetime.strptime(date_str, '%Y-%m-%d')
+                except:
+                    return datetime(1900, 1, 1)
+        
+        cards_sorted = sorted(cards, key=get_date)  # Ascending order (oldest first)
+        
+        # Return simplified card info for admin list
+        result = []
+        for card in cards_sorted:
+            result.append({
+                "id": card.get("id"),
+                "name": card.get("name"),
+                "issuer": card.get("issuer"),
+                "last_updated": card.get("last_updated", "Never"),
+                "image": card.get("image"),
+                "source_url": card.get("source_url"),
+                "notes": card.get("notes", "")[:50] + "..." if len(card.get("notes", "")) > 50 else card.get("notes", "")
+            })
+        
+        return {"cards": result, "total": len(result)}
+    except Exception as e:
+        return JSONResponse(status_code=500, content={"error": str(e)})
+
+
+@app.post("/api/admin/cards/get")
+async def get_single_card(request: UpdateCardRequest):
+    """Get a single card's full data for editing"""
+    if not verify_admin_password(request.password):
+        return JSONResponse(status_code=401, content={"error": "Invalid password"})
+    
+    try:
+        cards_file = config.CARDS_FILE
+        with open(cards_file, 'r') as f:
+            data = json.load(f)
+        
+        for card in data.get('cards', []):
+            if card.get('id') == request.card_id:
+                return {"success": True, "card": card}
+        
+        return JSONResponse(status_code=404, content={"error": "Card not found"})
+    except Exception as e:
+        return JSONResponse(status_code=500, content={"error": str(e)})
+
+
+@app.post("/api/admin/cards/edit")
+async def edit_card(request: EditCardRequest):
+    """Manually edit a card's data"""
+    if not verify_admin_password(request.password):
+        return JSONResponse(status_code=401, content={"error": "Invalid password"})
+    
+    try:
+        cards_file = config.CARDS_FILE
+        with open(cards_file, 'r') as f:
+            data = json.load(f)
+        
+        # Find and update the card
+        card_found = False
+        for i, card in enumerate(data.get('cards', [])):
+            if card.get('id') == request.card_id:
+                # Preserve ID and merge with new data
+                data['cards'][i] = {**request.card_data, 'id': request.card_id}
+                card_found = True
+                break
+        
+        if not card_found:
+            return JSONResponse(status_code=404, content={"error": "Card not found"})
+        
+        # Save updated data
+        with open(cards_file, 'w') as f:
+            json.dump(data, f, indent=2)
+        
+        # Reload cards in memory
+        reload_cards()
+        
+        return {"success": True, "message": f"Card {request.card_id} updated successfully"}
+    except Exception as e:
+        return JSONResponse(status_code=500, content={"error": str(e)})
+
+
+@app.post("/api/admin/cards/update-single")
+async def update_single_card(request: UpdateCardRequest):
+    """Update a single card using LLM extraction"""
+    if not verify_admin_password(request.password):
+        return JSONResponse(status_code=401, content={"error": "Invalid password"})
+    
+    try:
+        import subprocess
+        import sys
+        
+        # Run update script for single card
+        script_path = Path(__file__).parent / "scripts" / "update_cards.py"
+        
+        # Run the script with the card_id as argument
+        result = subprocess.run(
+            [sys.executable, str(script_path), "--card-id", request.card_id],
+            capture_output=True,
+            text=True,
+            timeout=120,  # 2 minute timeout
+            env={**os.environ, "SINGLE_CARD_UPDATE": request.card_id}
+        )
+        
+        # Reload cards after update
+        reload_cards()
+        
+        return {
+            "success": result.returncode == 0,
+            "message": "Card update completed" if result.returncode == 0 else "Card update failed",
+            "output": result.stdout[-1000:] if result.stdout else "",
+            "error": result.stderr[-500:] if result.stderr else ""
+        }
+    except subprocess.TimeoutExpired:
+        return JSONResponse(status_code=408, content={"error": "Update timed out after 2 minutes"})
+    except Exception as e:
+        return JSONResponse(status_code=500, content={"error": str(e)})
+
+
+@app.post("/api/admin/cards/update-all")
+async def update_all_cards(request: UpdateAllCardsRequest):
+    """Trigger update of all cards (runs in background)"""
+    if not verify_admin_password(request.password):
+        return JSONResponse(status_code=401, content={"error": "Invalid password"})
+    
+    try:
+        import subprocess
+        import sys
+        
+        script_path = Path(__file__).parent / "scripts" / "update_cards.py"
+        
+        # Start the update process in background (non-blocking)
+        process = subprocess.Popen(
+            [sys.executable, str(script_path)],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            env=os.environ
+        )
+        
+        return {
+            "success": True,
+            "message": "Card update started in background",
+            "pid": process.pid,
+            "note": "Check update_log.txt for progress. This may take several minutes."
+        }
+    except Exception as e:
+        return JSONResponse(status_code=500, content={"error": str(e)})
+
+
 if __name__ == "__main__":
     # Print config on startup
     config.print_config()
